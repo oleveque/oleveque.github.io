@@ -56,7 +56,7 @@
 			<section class="wrapper style1 align-center" id="contact-me">
 				<div class="inner medium">
 					<h2>Get in touch</h2>
-					<form method="post" action="#">
+					<form action="https://formspree.io/olivier@leveque.xyz" method="POST" />
 						<div class="fields">
 							<div class="field half">
 								<label for="name">Name</label>
@@ -72,7 +72,10 @@
 							</div>
 						</div>
 						<ul class="actions special">
-							<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+							<li>
+								<input type="text" name="_gotcha" style="display:none" />
+								<input type="submit" name="submit" id="submit" value="Send Message" />
+							</li>
 						</ul>
 					</form>
 
