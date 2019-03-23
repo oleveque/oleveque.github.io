@@ -48,7 +48,7 @@
 					</ul>
 				</div>
 				<div class="image">
-					<img src="images/IMG_2604.webp" alt="Olivier Lévêque" />
+					<img src="images/IMG_2604.webp" alt="Olivier Lévêque" id="background" />
 				</div>
 			</section>
 
@@ -82,6 +82,33 @@
 				</div>
 			</section>
 		</div>
+
+		<!-- Dark mode -->
+		<script src="assets/js/suncalc.js"></script>
+		<script type="text/javascript">
+			var now = new Date();
+			var data = getDataFromIP();
+			var times = SunCalc.getTimes(now, data.lat, data.lon);
+			var darkmode = (now < times.sunriseEnd || times.sunset < now);
+			if (darkmode) {
+				document.getElementById("background").src = 'images/IMG_2604_DARK.webp';
+				var elems = document.getElementsByTagName("section");
+				for(i = 0; i < elems.length; i++) {
+					elems[i].classList.add("invert");
+				}
+			}
+
+			function getDataFromIP() {
+				if (window.XMLHttpRequest) {
+					xmlhttp = new XMLHttpRequest(); // code for modern browsers
+				} else {
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); // code for old IE browsers
+				}
+				xmlhttp.open('GET','http://ip-api.com/json/',false);
+				xmlhttp.send(null);
+				return JSON.parse(xmlhttp.responseText);
+			}
+		</script>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
