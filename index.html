@@ -88,7 +88,7 @@
 		<script type="text/javascript">
 			var now = new Date();
 			var data = getDataFromIP();
-			var times = SunCalc.getTimes(now, data.lat, data.lon);
+			var times = SunCalc.getTimes(now, data.latitude, data.longitude);
 			var darkmode = (now < times.sunriseEnd || times.sunset < now);
 			if (darkmode) {
 				document.getElementById("background").src = 'images/IMG_2604_DARK.webp';
@@ -104,7 +104,7 @@
 				} else {
 					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); // code for old IE browsers
 				}
-				xmlhttp.open('GET','http://ip-api.com/json/',false);
+				xmlhttp.open('GET','https://ipapi.co/json/',false);
 				xmlhttp.send(null);
 				return JSON.parse(xmlhttp.responseText);
 			}
