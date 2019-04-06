@@ -48,7 +48,10 @@
 					</ul>
 				</div>
 				<div class="image">
-					<img src="images/IMG_2604.webp" alt="Olivier Lévêque" id="background" />
+					<picture id="background">
+						<source type="image/webp" srcset="images/IMG_2604.webp">
+						<img src="images/IMG_2604.jpg" alt="Olivier Lévêque" />
+					</picture>
 				</div>
 			</section>
 
@@ -94,7 +97,10 @@
 				var times = SunCalc.getTimes(now, data.latitude, data.longitude);
 				var mode = (now < times.sunriseEnd || times.sunset < now);
 				if (mode) {
-					document.getElementById('background').src = 'images/IMG_2604_DARK.webp'; // grayscale image
+					// change sources to grayscale images
+					document.getElementById('background').children[0].srcset = 'images/IMG_2604_DARK.webp'
+					document.getElementById('background').children[1].src = 'images/IMG_2604_DARK.jpg';
+					// invert color sections
 					var elems = document.getElementsByTagName('section');
 					for(i = 0; i < elems.length; i++) {
 						elems[i].classList.add('invert'); // invert color
