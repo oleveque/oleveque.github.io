@@ -108,9 +108,9 @@
 				var times = SunCalc.getTimes(now, data.latitude, data.longitude);
 				var mode = (now < times.sunriseEnd || times.sunset < now);
 				if (mode) {
-					// change sources to grayscale images
-					document.getElementById('background').children[0].srcset = 'images/IMG_2604_DARK.webp'
-					document.getElementById('background').children[1].src = 'images/IMG_2604_DARK.jpg';
+					// apply filters to images
+					document.getElementById('background').children[1].style.filter = "grayscale(100%) contrast(150%)"; // Standard syntax
+					document.getElementById('background').children[1].style.WebkitFilter = "grayscale(100%) contrast(150%)"; // Safari 6.0 - 9.0
 					// invert color sections
 					var elems = document.getElementsByTagName('section');
 					for(i = 0; i < elems.length; i++) {
