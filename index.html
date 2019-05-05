@@ -95,6 +95,13 @@
 
 				</div>
 			</section>
+
+			<!-- Footer -->
+			<footer class="wrapper style1 align-center">
+				<div class="inner">
+					<p>&copy; 2019. Image: <a href="https://didiergoupy.com">Didier Goupy</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</div>
+			</footer>
 		</div>
 
 		<!-- Dark mode -->
@@ -116,6 +123,8 @@
 					for(i = 0; i < elems.length; i++) {
 						elems[i].classList.add('invert'); // invert color
 					}
+					// invert color footer
+					document.getElementsByTagName('footer')[0].classList.add('invert');
 				}
 			}
 
