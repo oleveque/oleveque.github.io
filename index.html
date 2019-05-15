@@ -53,6 +53,7 @@
 					<h1>Olivier Lévêque</h1>
 					<p>I'm a PhD candidate at <a href="https://www.lcf.institutoptique.fr/Groupes-de-recherche/SPIM">Charles Fabry Laboratory</a> working on Optimization and Image Processing for Optics. I've received my Master diploma in <a href="http://ens-paris-saclay.fr/lecole/departements/electronique-electrotechnique-automatique-eea">Electrical Engineering</a> in 2017 from the École normale supérieure Paris-Saclay, followed by a second one in <a href="https://www.universite-paris-saclay.fr/en/education/master/m2-automatique-traitement-du-signal-des-images-atsi">Automatic Control and Signal Processing</a> in 2018 from the Université Paris-Saclay. I'm passionate by Robotics. During my undergraduate studies, I've founded with some of my greatest friends <a href="https://www.mr-robotics.com/">Mr. Robotics</a>, an open source software and hardware project to easely build an autonomous robot. Hopefully, I'll be back soon to this project, but for the moment, there is a PhD going on!</p>
 					<ul class="icons">
+						<li><a onclick="darkMode(!mode)" class="icon style2 fa-moon-o" id="dark-mode-button"><span class="label">DarkMode</span></a></li>
 						<li><a href="https://github.com/oleveque/" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="https://www.linkedin.com/in/oleveque/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="#contact-me" class="icon style2 fa-envelope smooth-scroll-middle"><span class="label">Email</span></a></li>
@@ -107,14 +108,16 @@
 		<!-- Dark mode -->
 		<script src="assets/js/suncalc.js"></script>
 		<script type="text/javascript">
+			var mode = false;
+
 			getDataFromIP();
 
-			function darkMode() {
-				var now = new Date();
-				var data = JSON.parse(this.responseText);
-				var times = SunCalc.getTimes(now, data.latitude, data.longitude);
-				var mode = (now < times.sunriseEnd || times.sunset < now);
+			function darkMode(m) {
+				mode = m;
 				if (mode) {
+					// change icon button
+					document.getElementById('dark-mode-button').classList.add('fa-sun-o');
+					document.getElementById('dark-mode-button').classList.remove('fa-moon-o');
 					// apply filters to images
 					document.getElementById('background').children[1].style.filter = "grayscale(100%) contrast(150%)"; // Standard syntax
 					document.getElementById('background').children[1].style.WebkitFilter = "grayscale(100%) contrast(150%)"; // Safari 6.0 - 9.0
@@ -126,6 +129,28 @@
 					// invert color footer
 					document.getElementsByTagName('footer')[0].classList.add('invert');
 				}
+				else {
+					// change icon button
+					document.getElementById('dark-mode-button').classList.remove('fa-sun-o');
+					document.getElementById('dark-mode-button').classList.add('fa-moon-o');
+					// remove filters to images
+					document.getElementById('background').children[1].style.filter = "none"; // Standard syntax
+					document.getElementById('background').children[1].style.WebkitFilter = "none"; // Safari 6.0 - 9.0
+					// restore color sections
+					var elems = document.getElementsByTagName('section');
+					for(i = 0; i < elems.length; i++) {
+						elems[i].classList.remove('invert'); // restore color
+					}
+					// restore color footer
+					document.getElementsByTagName('footer')[0].classList.remove('invert');
+				}
+			}
+
+			function setDarkMode() {
+				var now = new Date();
+				var data = JSON.parse(this.responseText);
+				var times = SunCalc.getTimes(now, data.latitude, data.longitude);
+				darkMode(now < times.sunriseEnd || times.sunset < now);
 			}
 
 			function getDataFromIP() {
@@ -134,7 +159,7 @@
 				} else {
 					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); // code for old IE browsers
 				}
-				xmlhttp.onload = darkMode;
+				xmlhttp.onload = setDarkMode;
 				xmlhttp.open('GET', 'https://ipapi.co/json/', true);
 				xmlhttp.send(null);
 			}
