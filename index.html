@@ -107,10 +107,16 @@
 
 		<!-- Dark mode -->
 		<script src="assets/js/suncalc.js"></script>
+		<script src="assets/js/cookie.js"></script>
 		<script type="text/javascript">
-			var mode = false;
+			var mode = new Boolean('false');
 
-			getDataFromIP();
+			if (getCookie('oleveque-darkmode') == '') {
+				getDataFromIP();
+			}
+			else {
+				darkMode(getCookie('oleveque-darkmode') == 'true');
+			}
 
 			function darkMode(m) {
 				mode = m;
@@ -144,6 +150,7 @@
 					// restore color footer
 					document.getElementsByTagName('footer')[0].classList.remove('invert');
 				}
+				setCookie('oleveque-darkmode', mode, 1);
 			}
 
 			function setDarkMode() {
