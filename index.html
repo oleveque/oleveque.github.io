@@ -103,7 +103,7 @@
 			<!-- Footer -->
 			<footer class="wrapper style1 align-center">
 				<div class="inner">
-					<p>&copy; 2020. Image: <a href="https://didiergoupy.com" target="blank_">Didier Goupy</a>. Design: <a href="https://html5up.net" target="blank_">HTML5 UP</a>.</p>
+					<p>&copy; <span id="current-year">yyyy</span>. Image: <a href="https://didiergoupy.com" target="blank_">Didier Goupy</a>. Design: <a href="https://html5up.net" target="blank_">HTML5 UP</a>.</p>
 				</div>
 			</footer>
 
@@ -113,6 +113,8 @@
 		<script src="assets/js/suncalc.js"></script>
 		<script src="assets/js/cookie.js"></script>
 		<script type="text/javascript">
+			document.getElementById('current-year').innerHTML = new Date().getFullYear();
+
 			var mode = new Boolean('false');
 
 			if (getCookie('oleveque-darkmode') == '') {
