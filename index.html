@@ -56,7 +56,7 @@
 						<li><a href="https://youtu.be/sP8NO8JgrYU" target="blank_" class="button small wide icon fa-play">My Thesis in 3 minutes</a></li>
 					</ul>
 					<ul class="icons">
-						<li><a onclick="darkMode(!mode)" class="icon style2 fa-moon-o" id="dark-mode-button" style="cursor:pointer;"><span class="label">DarkMode</span></a></li>
+						<li><a onclick="darkMode()" class="icon style2 fa-moon-o" id="dark-mode-button" style="cursor:pointer;"><span class="label">DarkMode</span></a></li>
 						<li><a href="https://github.com/oleveque/" class="icon style2 fa-github" target="blank_"><span class="label">GitHub</span></a></li>
 						<li><a href="https://www.linkedin.com/in/oleveque/" class="icon style2 fa-linkedin" target="blank_"><span class="label">LinkedIn</span></a></li>
 						<li><a href="#contact-me" class="icon style2 fa-envelope smooth-scroll-middle"><span class="label">Email</span></a></li>
@@ -106,6 +106,7 @@
 					<p>&copy; 2020. Image: <a href="https://didiergoupy.com" target="blank_">Didier Goupy</a>. Design: <a href="https://html5up.net" target="blank_">HTML5 UP</a>.</p>
 				</div>
 			</footer>
+
 		</div>
 
 		<!-- Dark mode -->
@@ -122,8 +123,11 @@
 			}
 
 			function darkMode(m) {
-				mode = m;
-				if (mode) {
+				if (m === undefined) {
+					mode = !mode;
+					m = mode;
+				}
+				if (m) {
 					// change icon button
 					document.getElementById('dark-mode-button').classList.add('fa-sun-o');
 					document.getElementById('dark-mode-button').classList.remove('fa-moon-o');
@@ -199,7 +203,7 @@
 		    "https://github.com/oleveque/",
 		    "https://www.mr-robotics.com/"
 		  ],
-		  "jobTitle": "Early-Stage Researcher",
+		  "jobTitle": "Early-stage Researcher",
 		  "worksFor": {
 		    "@type": "Organization",
 		    "name": "Charles Fabry Laboratory"
