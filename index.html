@@ -56,9 +56,10 @@
 						<li><a href="https://youtu.be/sP8NO8JgrYU" target="blank_" class="button small wide icon fa-play">My Thesis in 3 minutes</a></li>
 					</ul>
 					<ul class="icons">
-						<li><a onclick="darkMode()" class="icon style2 fa-moon-o" id="dark-mode-button" style="cursor:pointer;"><span class="label">DarkMode</span></a></li>
+						<li><a onclick="darkMode(!mode)" class="icon style2 fa-adjust" style="cursor:pointer;"><span class="label">DarkMode</span></a></li>
 						<li><a href="https://github.com/oleveque/" class="icon style2 fa-github" target="blank_"><span class="label">GitHub</span></a></li>
 						<li><a href="https://www.linkedin.com/in/oleveque/" class="icon style2 fa-linkedin" target="blank_"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://scholar.google.com/citations?user=TooV_xYAAAAJ" class="icon style2 fa-graduation-cap" target="blank_"><span class="label">Google Scholar</span></a></li>
 					</ul>
 				</div>
 				<div class="image">
@@ -72,36 +73,27 @@
 			<!-- Footer -->
 			<footer class="wrapper style1 align-center">
 				<div class="inner">
-					<p>&copy; <span id="current-year">yyyy</span>. Image: <a href="https://didiergoupy.com" target="blank_">Didier Goupy</a>. Design: <a href="https://html5up.net" target="blank_">HTML5 UP</a>.</p>
+					<p>&copy; <span id="current-year">2019</span>. Image: <a href="https://didiergoupy.com" target="blank_">Didier Goupy</a>. Design: <a href="https://html5up.net" target="blank_">HTML5 UP</a>.</p>
 				</div>
 			</footer>
 
 		</div>
 
 		<!-- Dark mode -->
-		<script src="assets/js/suncalc.js"></script>
 		<script src="assets/js/cookie.js"></script>
 		<script type="text/javascript">
 			document.getElementById('current-year').innerHTML = new Date().getFullYear();
-
-			var mode = new Boolean('false');
-
-			if (getCookie('oleveque-darkmode') == '') {
-				getDataFromIP();
-			}
-			else {
-				darkMode(getCookie('oleveque-darkmode') == 'true');
+			
+			var mode = false;
+			var cookie = getCookie('darkmode');
+			if (cookie) {
+				mode = (cookie=='true');
+				darkMode(mode);
 			}
 
 			function darkMode(m) {
-				if (m === undefined) {
-					mode = !mode;
-					m = mode;
-				}
-				if (m) {
-					// change icon button
-					document.getElementById('dark-mode-button').classList.add('fa-sun-o');
-					document.getElementById('dark-mode-button').classList.remove('fa-moon-o');
+				mode = m;
+				if (mode) {
 					// apply filters to images
 					document.getElementById('background').children[1].style.filter = "grayscale(100%) contrast(150%)"; // Standard syntax
 					document.getElementById('background').children[1].style.WebkitFilter = "grayscale(100%) contrast(150%)"; // Safari 6.0 - 9.0
@@ -114,9 +106,6 @@
 					document.getElementsByTagName('footer')[0].classList.add('invert');
 				}
 				else {
-					// change icon button
-					document.getElementById('dark-mode-button').classList.remove('fa-sun-o');
-					document.getElementById('dark-mode-button').classList.add('fa-moon-o');
 					// remove filters to images
 					document.getElementById('background').children[1].style.filter = "none"; // Standard syntax
 					document.getElementById('background').children[1].style.WebkitFilter = "none"; // Safari 6.0 - 9.0
@@ -128,25 +117,7 @@
 					// restore color footer
 					document.getElementsByTagName('footer')[0].classList.remove('invert');
 				}
-				setCookie('oleveque-darkmode', mode, 1);
-			}
-
-			function setDarkMode() {
-				var now = new Date();
-				var data = JSON.parse(this.responseText);
-				var times = SunCalc.getTimes(now, data.latitude, data.longitude);
-				darkMode(now < times.sunriseEnd || times.sunset < now);
-			}
-
-			function getDataFromIP() {
-				if (window.XMLHttpRequest) {
-					xmlhttp = new XMLHttpRequest(); // code for modern browsers
-				} else {
-					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); // code for old IE browsers
-				}
-				xmlhttp.onload = setDarkMode;
-				xmlhttp.open('GET', 'https://ipapi.co/json/', true);
-				xmlhttp.send(null);
+				setCookie('darkmode',mode,1);
 			}
 		</script>
 
