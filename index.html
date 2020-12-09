@@ -126,8 +126,9 @@
 			var mode = false;
 			var cookie = getCookie('darkmode');
 			if (cookie) {
-				mode = (cookie=='true');
-				darkMode(mode);
+				darkMode(cookie=='true');
+			} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				darkMode(true);
 			}
 
 			function darkMode(m) {
@@ -143,8 +144,7 @@
 					}
 					// invert color footer
 					document.getElementsByTagName('footer')[0].classList.add('invert');
-				}
-				else {
+				} else {
 					// remove filters to images
 					document.getElementById('background').children[1].style.filter = "none"; // Standard syntax
 					document.getElementById('background').children[1].style.WebkitFilter = "none"; // Safari 6.0 - 9.0
