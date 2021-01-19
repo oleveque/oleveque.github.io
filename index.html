@@ -167,27 +167,25 @@
 			function darkMode(m) {
 				mode = m;
 				if (mode) {
-					// apply filters to images
-					document.getElementById('background').children[1].style.filter = "grayscale(100%) contrast(150%)"; // Standard syntax
-					document.getElementById('background').children[1].style.WebkitFilter = "grayscale(100%) contrast(150%)"; // Safari 6.0 - 9.0
 					// invert color sections
 					var elems = document.getElementsByTagName('section');
 					for(i = 0; i < elems.length; i++) {
-						elems[i].classList.add('invert'); // invert color
+						elems[i].classList.add('invert'); // inverts the color scheme
+						elems[i].classList.add('color1'); // uses background dark color
 					}
 					// invert color footer
 					document.getElementsByTagName('footer')[0].classList.add('invert');
+					document.getElementsByTagName('footer')[0].classList.add('color1');
 				} else {
-					// remove filters to images
-					document.getElementById('background').children[1].style.filter = "none"; // Standard syntax
-					document.getElementById('background').children[1].style.WebkitFilter = "none"; // Safari 6.0 - 9.0
 					// restore color sections
 					var elems = document.getElementsByTagName('section');
 					for(i = 0; i < elems.length; i++) {
-						elems[i].classList.remove('invert'); // restore color
+						elems[i].classList.remove('invert'); // restores the color scheme
+						elems[i].classList.remove('color1'); // restores background color
 					}
 					// restore color footer
 					document.getElementsByTagName('footer')[0].classList.remove('invert');
+					document.getElementsByTagName('footer')[0].classList.remove('color1');
 				}
 				setCookie('darkmode',mode,1);
 			}
