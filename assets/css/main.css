@@ -61,8 +61,9 @@ body {
 }
 
 mark {
-	background-color: transparent;
-	color: inherit;
+	background-color: #FFFFFF; /*transparent*/
+	color: #30363d; /*inherit;*/
+	font-size: 0.75rem;
 }
 
 input::-moz-focus-inner {
