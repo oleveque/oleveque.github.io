@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: LICENSE.txt
 Disallow: README.md
-Disallow: index-demo.html
 Disallow: /assets/
 Disallow: /images/
