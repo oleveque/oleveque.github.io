@@ -1,14 +1,8 @@
-<!DOCTYPE HTML>
-<!--
-	>> Credits <<
-	Design: Story by HTML5 UP
-	Icons : Font Awesome + Academicons
-	Font: Source Sans Pro by Paul D. Hunt (Google Fonts)
--->
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Favicon using https://realfavicongenerator.net/ -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png" />
@@ -40,427 +34,202 @@
 		<meta property="twitter:title" content="Olivier LÉVÊQUE" />
 		<meta property="twitter:description" content="I'm a researcher at ONERA - The French Aerospace Lab - in the Electromagnetism and Radar Department. I am working on the analysis of remote sensing images, with a focus on SAR (Synthetic Aperture Radar) images." />
 		<meta property="twitter:image" content="images/P9210365.jpg" />
+    
+    <!-- Bootstrap 5.3.2 https://getbootstrap.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload" style="background-color:#30363d">
-		<!-- Wrapper -->
-		<div id="wrapper" class="divided">
+    <!-- Bootstrap Icons 1.11.1 https://icons.getbootstrap.com/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-			<!-- Landing page -->
-			<section class="banner style1 orient-right content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right invert color1">
-				
-				<!-- Bio -->
-				<div class="content">
-					<h1>Olivier <strong>LÉVÊQUE</strong></h1>
-					<p>
-						I'm a researcher at <a href="https://www.onera.fr/en" target="blank_">ONERA</a> &ndash; The French Aerospace Lab &ndash; in the Electromagnetism and Radar Department. I am working on the analysis of remote sensing images, with a focus on SAR (Synthetic Aperture Radar) images.
-					</p>
-					<ul class="actions">
-						<li><a href="#bio" class="button primary small">Read more</a></li>
-						<li><a href="#publications" class="button small">Publications</a></li>
-						<li><a href="#talks" class="button small">Talks</a></li>
-					</ul>
-				</div>
+    <!-- Academicons 1.9.4 https://jpswalsh.github.io/academicons/ -->
+    <link rel="stylesheet" href="assets/css/academicons.min.css">
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="row align-items-center">
+      <!-- Banner / Image -->
+      <div class="col-sm-12 col-lg-6 p-0 vh-100">
+        <picture>
+          <source type="image/webp" srcset="images/P9210365.webp">
+          <img class="w-100 h-100 object-fit-cover" src="images/P9210365.jpg" alt="Olivier LÉVÊQUE">
+        </picture>
+      </div>
+      <!-- Banner / Description -->
+      <div class="col-sm-12 col-lg-6 p-0">
+        <div class="m-auto" style="max-width: 500px;">
+          <h1 class="fw-lighter" style="font-size: 3em;">Olivier <strong>LÉVÊQUE</strong><span class="fs-3">, PhD</span></h1>
+          <p class="fw-lighter text-body-secondary" style="font-size: 1.2em;">I'm a researcher at <a class="text-decoration-none" href="https://www.onera.fr/en" target="blank_">ONERA &ndash; The French Aerospace Lab</a> &ndash; in the Electromagnetism and Radar Department. I am working on the analysis of remote sensing images, with a focus on SAR (Synthetic Aperture Radar) images.</p>
+          <div class="d-grid gap-2 d-md-block">
+            <a role="button" class="btn btn-sm btn-light rounded-pill me-md-2" href="#bio">
+              <span class="p-3 fw-lighter text-uppercase">Read more</span>
+            </a>
+            <a role="button" class="btn btn-sm btn-outline-secondary rounded-pill me-md-2" href="#publications">
+              <span class="p-3 fw-lighter text-uppercase">Publications</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<!-- Main picture -->
-				<div class="image">
-					<picture id="background">
-						<source type="image/webp" srcset="images/P9210365.webp" />
-						<img src="images/P9210365.jpg" alt="Olivier LÉVÊQUE" />
-					</picture>
-				</div>
+    <!-- Bio -->
+    <div class="container border-bottom" id="bio">
+      <div class="row align-items-center justify-content-md-center vh-100">
+        <!-- Bio / Experiences -->
+        <div class="col-4">
+          <h2 class="fw-lighter mb-4">Last Experiences</h2>
+          
+          <div class="fw-lighter mb-1">Since 2022</div>
+          <div class="fw-bolder">Research Scientist</div>
+          <div class="fw-lighter">@ ONERA &ndash; The French Aerospace Lab</div>
+          <div class="fw-lighter fst-italic mb-4">Electromagnetism and Radar Department</div>
+          
+          <div class="fs-6 fw-lighter">2018 &ndash; 2022</div>
+          <div class="fw-bolder">Early-stage Researcher</div>
+          <div class="fw-lighter">@ Institut d'Optique Graduate School</div>
+          <div class="fw-lighter fst-italic mb-4">Charles Fabry Laboratory</div>
 
-			</section>
+          <div class="fs-6 fw-lighter">2016 (4 months)</div>
+          <div class="fw-bolder">Research Assistant</div>
+          <div class="fw-lighter">@ École polytechnique fédérale de Lausanne</div>
+          <div class="fw-lighter fst-italic mb-4">Laboratory of Movement Analysis and Measurement</div>
+          
+          <a role="button" class="btn btn-sm btn-outline-secondary rounded-pill" href="https://www.linkedin.com/in/oleveque/">
+            <span class="p-3 fw-lighter text-uppercase">Read more on LinkedIn</span>
+          </a>
+        </div>
 
-			<!-- CV -->
-			<section class="wrapper style1 align-center invert color1" id="bio">
-				<div class="inner">
-					<div class="items align-left style1 big">
-						<section>
-							<div class="inner">
-								<h3>Last Experiences</h3>
-								<p>
-									<span style="font-size:0.75em">Since 2022</span></br>
-									<strong>Research Scientist</strong></br>
-									@ ONERA &ndash; The French Aerospace Lab</br>
-									<i>Electromagnetism and Radar Department</i>
-								</p>
-								<p>
-									<span style="font-size:0.75em">2018 &ndash; 2022</span></br>
-									<strong>Early-stage Researcher</strong></br>
-									@ Institut d'Optique Graduate School</br>
-									<i>Charles Fabry Laboratory</i>
-								</p>
-								<p>
-									<span style="font-size:0.75em">2016 (4 months)</span></br>
-									<strong>Research Assistant</strong></br>
-									@ École polytechnique fédérale de Lausanne</br>
-									<i>Laboratory of Movement Analysis and Measurement</i>
-								</p>
-								<p class="align-center">
-									<a href="https://www.linkedin.com/in/oleveque/" target="blank_" class="button small">Read more on LinkedIn</a>
-								</p>
-							</div>
-						</section>
+        <!-- Bio / Education -->
+        <div class="col-4">
+          <h2 class="fw-lighter mb-4">Education</h2>
+          
+          <div class="fs-6 fw-lighter mb-1">2018 &ndash; 2022</div>
+          <div class="fw-lighter fw-bolder">Université Paris-Saclay</div>
+          <div class="fw-lighter mb-4">PhD in Applied Physics</div>
 
-						<section>
-							<div class="inner">
-								<h3>Education</h3>
-								<p>
-									<span style="font-size:0.75em">2018 &ndash; 2022</span></br>
-									<strong>Université Paris-Saclay</strong></br>
-									PhD in Applied Physics
-								</p>
-								<p>
-									<span style="font-size:0.75em">2014 &ndash; 2018</span></br>
-									<strong>École normale supérieure Paris-Saclay</strong></br>
-									🏆 <i>Lauréat de l'Agrégation de Sciences Industrielles</i></br>
-									MSc in Control, Signal & Image Processing</br>
-									MSc in Electrical Engineering
-								</p>
-								<p>
-									<span style="font-size:0.75em">2012 &ndash; 2014</span></br>
-									<strong>Lycée Sainte-Geneviève</strong> (Ginette)</br>
-									Classe préparatoire aux Grandes Écoles
-								</p>
-							</div>
-						</section>
+          <div class="fs-6 fw-lighter mb-1">2014 &ndash; 2018</div>
+          <div class="fw-bolder">École normale supérieure Paris-Saclay</div>
+          <div class="fw-lighter">🏆 <i>Lauréat de l'Agrégation de Sciences Industrielles</i></div>
+          <div class="fw-lighter">MSc in Control, Signal & Image Processing</div>
+          <div class="fw-lighter mb-1">MSc in Electrical Engineering</div>
+          <div class="border-start ps-3 ms-1 mb-4">
+            <div class="fw-bolder">École Polytechnique Fédérale de Lausanne</div>
+            <div class="fw-lighter">Exchange program</div>
+          </div>
 
-						<section>
-							<div class="inner align-center">
-								<span class="image">
-									<img src="images/mr_robotics.svg" alt="Mr. Robotics" width="150px" />
-								</span>
-								<p>
-									I'm also passionate by Robotics.
-									During my undergraduate studies, I've cofounded <strong>Mr. Robotics</strong>, an open source software and hardware project to easily build an autonomous robot.
-								</p>
-								<ul class="actions fit">
-									<li><a href="https://www.kickstarter.com/projects/whoismrrobotics/robby-a-french-evolutive-robot-enhancing-curiosity" target="blank_" class="button small">Crowdfunding campaign</a></li>
-									<li><a href="https://github.com/whoismrrobotics" target="blank_" class="button small">Free access to the codes</a></li>
-								</ul>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
+          <div class="fs-6 fw-lighter mb-1">2012 &ndash; 2014</div>
+          <div class="fw-bolder">Lycée Sainte-Geneviève (Ginette)</div>
+          <div class="fw-lighter mb-4">Classe préparatoire aux Grandes Écoles</div>
+        </div>
 
-			<!-- Publications -->
-			<section class="wrapper style1 invert color1" id="publications">
-				<div class="inner">
-					<div class="index align-left">
-						<section>
-							<header style="margin-bottom:2rem;">
-								<h3>Publications</h3>
-								<a href="#talks" class="button small">See Talks</a>
-							</header>
-							<div class="content">
-								<dl>
+        <!-- Bio / Others -->
+        <div class="col-4">
+          <img class="mx-auto d-block mb-4" src="images/mr_robotics.svg" alt="Mr. Robotics" width="160px" />
+          <p class="fw-lighter text-center">
+            I'm also passionate by Robotics.
+            During my undergraduate studies, I've cofounded <strong>Mr. Robotics</strong>, an open source software and hardware project to easily build an autonomous robot.
+          </p>
+          <div class="d-grid gap-2 col-8 mx-auto">
+            <a role="button" class="btn btn-sm btn-outline-secondary rounded-pill" href="https://www.kickstarter.com/projects/whoismrrobotics/robby-a-french-evolutive-robot-enhancing-curiosity">
+              <span class="p-2 fw-lighter text-uppercase">Crowdfunding campaign</span>
+            </a>
+            <a role="button" class="btn btn-sm btn-outline-secondary rounded-pill" href="https://github.com/whoismrrobotics">
+              <span class="p-2 fw-lighter text-uppercase">Free access to the codes</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-									<dt>Peer-reviewed scientific journal publications</dt>
-									<dd>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, L. Cognet and F. Goudail, "On the equivalence of binary phase masks optimized for localization or detection in extended depth-of-field localization microscopy,"</br>
-											J. Opt. Soc. Am. A 40, 1753-1761 (2023) <mark>Editors' Pick</mark></br>
-											<a href="https://doi.org/10.1364/JOSAA.492654" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-closed-access"></i> <span style="font-size:0.75em">Closed access</span>
-											</a>|
-											<a href="https://hal.science/hal-04189164" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>|
-											<a href="https://hal.science/hal-04189164/document" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Free reading access</span>
-											</a>
-										</p>
-										<p>
-											Q. Gresil, A. Lee, <strong>O. Lévêque</strong>, K. Caicedo, B. Martín Muñoz, C. Kulcsár, F. Goudail, P. Bon and L. Cognet, "A Binary Annular Phase Mask to Regulate Spherical Aberration and Allow Super-Localization in Single-Particle Tracking over Extended Depth-of-Focus,"</br>
-											Optics Communications (2023)</br>
-											<a href="https://doi.org/10.1016/j.optcom.2023.129699" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-closed-access"></i> <span style="font-size:0.75em">Closed access</span>
-											</a>|
-											<a href="https://arxiv.org/abs/2304.12774v2" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-arxiv"></i>
-												<span style="font-size:0.75em">arXiv Open Archives</span>
-											</a>|
-											<a href="https://arxiv.org/pdf/2304.12774v2.pdf" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Free reading access</span>
-											</a>
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, A. Lee, P. Bon, L. Cognet and F. Goudail, "On the validity domain of maximum likelihood estimators for depth-of-field extension in single-molecule localization microscopy,"</br>
-											J. Opt. Soc. Am. A 39, 37-43 (2022) <mark>Editors' Pick</mark></br>
-											<a href="https://doi.org/10.1364/JOSAA.439993" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-closed-access"></i> <span style="font-size:0.75em">Closed access</span>
-											</a>|
-											<a href="https://hal.science/hal-03473290" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>|
-											<a href="https://hal.science/hal-03473290/document" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Free reading access</span>
-											</a>
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, R. Duverger, H. Sauer, C. Kulcsár, and F. Goudail, "Influence of high numerical aperture on depth-of-field enhancing phase mask optimization in localization microscopy,"</br>
-											J. Opt. Soc. Am. A 38, 1380-1390 (2021)</br>
-											<a href="https://doi.org/10.1364/JOSAA.432696" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-closed-access"></i> <span style="font-size:0.75em">Closed access</span>
-											</a>|
-											<a href="https://hal.science/hal-03331525" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>|
-											<a href="https://hal.science/hal-03331525/document" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Free reading access</span>
-											</a>
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail, "Comparison of linear and nonlinear deconvolution algorithms for co-optimization of depth-of-field enhancing binary phase masks,"</br>
-											OSA Continuum 4, 589-601 (2021)</br>
-											<a href="https://doi.org/10.1364/OSAC.415925" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-open-access"></i> <span style="font-size:0.75em">Open access</span>
-											</a>|
-											<a href="https://hal.science/hal-03128047" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>|
-											<a href="https://www.osapublishing.org/osac/viewmedia.cfm?uri=osac-4-2-589" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Reading access</span>
-											</a>
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, A. Lee, H. Sauer, A. Aleksanyan, P. Bon, L. Cognet, and F. Goudail, "Co-designed annular binary phase masks for depth-of-field extension in single-molecule localization microscopy,"</br>
-											Opt. Express 28, 32426-32446 (2020)</br>
-											<a href="https://doi.org/10.1364/OE.402752" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-open-access"></i> <span style="font-size:0.75em">Open access</span>
-											</a>|
-											<a href="https://hal.science/hal-03025638" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>|
-											<a href="https://www.osapublishing.org/osac/viewmedia.cfm?uri=oe-28-22-32426" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Reading access</span>
-											</a>
-										</p>
-									</dd>
+    <div class="container border-bottom" id="publications">
+      <!-- Publications -->
+      <h2 class="fw-lighter pt-5">Publications</h2>
+      
+      <h5 class="fw-lighter mb-4">Peer-reviewed scientific journal publications</h5>
+      <div id="publi" class="row mb-2" data-masonry='{ "percentPosition": true }'></div>
+      
+      <h5 class="fw-lighter mb-4">International conference proceedings</h5>
+      <div id="publi-proc" class="row mb-2" data-masonry='{ "percentPosition": true }'></div>
 
-									<dt>International conference proceedings</dt>
-									<dd>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail, "Can better performance be obtained when an imaging system is co-optimized with a nonlinear deconvolution algorithm?," Proc. SPIE 11866, Electro-Optical and Infrared Systems: Technology and Applications XVIII and Electro-Optical Remote Sensing XV, 118660A (13 September 2021)</br>
-											<a href="https://doi.org/10.1117/12.2597122" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-closed-access"></i>
-												<span style="font-size:0.75em">Closed access</span>
-											</a>|
-											<a href="https://hal.science/hal-03368729" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, A. Lee, P. Bon, L. Cognet, and F. Goudail, "How to assess depth-of-field extension strategies applied to single-molecule super-resolution microscopes?," in <i>OSA Imaging and Applied Optics Congress 2021 (3D, COSI, DH, ISA, pcAOP)</i>, OSA Technical Digest (Optical Society of America, 2021), paper CF4B.5</br>
-											<a href="https://doi.org/10.1364/COSI.2021.CF4B.5" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-closed-access"></i>
-												<span style="font-size:0.75em">Closed access</span>
-											</a>|
-											<a href="https://hal.science/hal-03417511" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>|
-											<a href="https://hal.science/hal-03417511/document" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Free reading access</span>
-											</a>
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, H. Sauer, A. Lee, P. Bon, L. Cognet, and F. Goudail, "Can phase masks extend depth-of-field in localization microscopy?," Proc. SPIE 11351, Unconventional Optical Imaging II, 113510E (13 October 2020)</br>
-											<a href="https://doi.org/10.1117/12.2558426" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-closed-access"></i> <span style="font-size:0.75em">Closed access</span>
-											</a>|
-											<a href="https://hal.science/hal-03025685" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>|
-											<a href="https://hal.science/hal-03025685/document" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Free reading access</span>
-											</a>
-										</p>
-									</dd>								
+      <h5 class="fw-lighter mb-4">PhD dissertation</h5>
+      <div id="publi-phd" class="row mb-5" data-masonry='{ "percentPosition": true }'></div>
+    
+    </div>
+    
+    <!-- Footer -->
+    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="#" class="mb-4 me-3 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <img src="assets/icon/favicon-32x32.png" width="32" height="32">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">2019 &mdash; 2023</br>Designed with <a class="text-decoration-none" href="https://getbootstrap.com/">Bootstrap</a></br>Hosted on <a class="text-decoration-none" href="https://pages.github.com/">GitHub Pages</a></span>
+      </div>
 
-									<dt>PhD dissertation</dt>
-									<dd>
-										<p>
-											<strong>O. Lévêque</strong>, "Co-conception de systèmes d'imagerie pour l'extension de profondeur de champ &mdash; Application à la localisation de molécule unique," PhD Thesis, Université Paris-Saclay (2022)</br>
-											<a href="http://www.theses.fr/2022UPAST009" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-doi"></i>
-												<i class="ai ai-open-access"></i> <span style="font-size:0.75em">Open access</span>
-											</a>|
-											<a href="https://pastel.archives-ouvertes.fr/tel-03583892" target="blank_" style="text-decoration:none;">
-												<i class="ai ai-hal"></i>
-												<span style="font-size:0.75em">HAL Open Archives</span>
-											</a>|
-											<a href="https://pastel.archives-ouvertes.fr/tel-03583892/document" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-file-pdf-o"></i>
-												<span style="font-size:0.75em">Reading access</span>
-											</a>
-										</p>
-									</dd>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://hal.science/search/index/q/*/authIdHal_s/oleveque"><i style="font-size: 1.25rem;" class="ai ai-hal"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://scholar.google.com/citations?user=TooV_xYAAAAJ&hl=en"><i style="font-size: 1.25rem;" class="ai ai-google-scholar"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/oleveque/"><i style="font-size: 1.25rem;" class="ai bi-github"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/oleveque/"><i style="font-size: 1.25rem;" class="ai bi-linkedin"></i></a></li>
+      </ul>
+    </footer>
+    
+    <!-- Bootstrap 5.3.2 https://getbootstrap.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Masonry 4.2.2 https://masonry.desandro.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
-								</dl>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
+    <script>
+      function add(gridContainer, textContent, breadcrumbItems) {
+        var divCol = document.createElement("div");
+        divCol.className = "col-sm-12 col-lg-6 mb-4";
 
-			<!-- Talks -->
-			<section class="wrapper style1 invert color1" id="talks">
-				<div class="inner">
-					<div class="index align-left">
-						<section>
-							<header style="margin-bottom:2rem;">
-								<h3>Talks</h3>
-								<a href="#publications" class="button small">See Publications</a>
-							</header>
-							<div class="content">
-								<dl>
-									<dt>French talks</dt>
-									<dd>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, A. Lee, P. Bon, L. Cognet, and F. Goudail. "Masques de phases optimisés pour l’augmentation de profondeur de champ en microscopie de molécules uniques (MASK)," <i>Présentation scientifique – projets de l’appel 2019</i>, AG du GdR-ISIS (CNRS), June 2021, Biarritz, France.
-											<!--
-												HAL Open Archives: https://hal.science/hal-03331689
-												Abstract: http://www.gdr-isis.fr/index.php/projets-de-recherche-isis/
-											-->
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail. "Quelle influence peut avoir le modèle d'imagerie sur l'optimisation de masques de phase augmentant la profondeur de champ en microscopie de localisation ?," <i>Journée Co-conception de systèmes hybrides</i>, GdR-ISIS (CNRS), May 2021, Online Only, France.
-											<!--
-												HAL Open Archives: https://hal.science/hal-03331684
-												Abstract: http://www.gdr-isis.fr/index.php/reunion/450
-											-->
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail. "Obtient-on de meilleures performances lorsqu'un système d'imagerie est co-optimisé avec un algorithme de déconvolution non linéaire ?," <i>Journées d'Imagerie Optique Non Conventionnelle</i>, GdR-ISIS (CNRS), March 2021, Online Only, France.
-											<!--
-												HAL Open Archives: https://hal.science/hal-03188330
-												Abstract: http://www.gdr-isis.fr/index.php/reunion/443
-											-->
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail. "Co-conception en imagerie PALM : comment imager dans les milieux épais ?," <i>Journées d'Imagerie Optique Non Conventionnelle</i>, GdR-ISIS (CNRS), March 2020, Paris, France.
-											<!--
-												HAL Open Archives: https://hal.science/hal-02505647
-												Abstract: http://www.gdr-isis.fr/index.php/reunion/409
-											-->
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>. "Augmentation de la profondeur de champ d’un système d’imagerie pour la localisation de molécules uniques," <i>Séminaire des doctorants</i>, LCF-IOGS, January 2020, Palaiseau, France.
-											<!--
-												Abstract: https://www.lcf.institutoptique.fr/agenda/seminaire-des-doctorants-olivier-leveque
-											-->
-										</p>
-										<p>
-											<strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail. "Optimisation de masques de phase binaires pour l’augmentation de la profondeur de champ en imagerie de la molécule unique," <i>Journée Co-conception de systèmes hybrides</i>, GdR-ISIS (CNRS), October 2019, Paris, France.
-											<!--
-												HAL Open Archives: https://hal.science/hal-02493818
-												Abstract: http://www.gdr-isis.fr/index.php/reunion/401
-											-->
-										</p>
-									</dd>
+        var divCard = document.createElement("div");
+        divCard.className = "card";
 
-									<dt>Popular science</dt>
-									<dd>
-										<p>
-											<strong>O. Lévêque</strong>. "L’infiniment petit sous observation : Finale MT180 Université Paris-Saclay," <i>Ma Thèse en 180 secondes</i>, March 2020, Palaiseau, France.</br>
-											<a href="https://youtu.be/sP8NO8JgrYU" target="blank_" style="text-decoration:none;">
-												<i class="fa fa-youtube-play"></i>
-												<span style="font-size:0.75em">Watch on YouTube</span>
-											</a>
-											<!--
-												HAL Open Archives: https://hal.science/hal-03188344
-												Abstract: https://www.universite-paris-saclay.fr/olivier-leveque-linfiniment-petit-sous-observation
-											-->
-										</p>
-									</dd>
-								</dl>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
+        var divCardBody = document.createElement("div");
+        divCardBody.className = "card-body fw-lighter";
+        divCardBody.innerHTML = textContent;
+        
+        var nav = document.createElement("nav");
+        nav.style = "--bs-breadcrumb-divider: '•';";
+        nav.setAttribute("aria-label", "breadcrumb");
 
-			<!-- Footer -->
-			<footer class="wrapper style1 align-center invert color1">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://hal.science/search/index/q/*/authIdHal_s/oleveque" class="icon style2 ai-hal" target="blank_"><span class="label">Archive ouverte HAL</span></a></li>
-						<li><a href="https://scholar.google.com/citations?user=TooV_xYAAAAJ&hl=en" class="icon style2 ai-google-scholar" target="blank_"><span class="label">Google Scholar</span></a></li>
-						<li><a href="https://github.com/oleveque/" class="icon style2 fa-github" target="blank_"><span class="label">GitHub</span></a></li>
-						<li><a href="https://www.linkedin.com/in/oleveque/" class="icon style2 fa-linkedin" target="blank_"><span class="label">LinkedIn</span></a></li>
-					</ul>
-					<p>
-						Designed with <a href="https://html5up.net" target="blank_">HTML5 UP</a></br>
-						Hosted on <i class="fa fa-github"></i> <a href="https://pages.github.com/" target="blank_">GitHub</a></br>
-						<span id="dates">2019</span>
-					</p>
-				</div>
-			</footer>
+        var ol = document.createElement("ol");
+        ol.className = "breadcrumb mb-0 mt-2";
 
-		</div>
+        breadcrumbItems.forEach(item => {
+            var li = document.createElement("li");
+            li.className = "breadcrumb-item";
 
-		<!-- Scripts -->
-		<script type="text/javascript">
-			document.getElementById('dates').innerHTML = '2019 &ndash; '+new Date().getFullYear();
-		</script>
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		
-		<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org/",
-		  "@type": "Person",
-		  "name": "Olivier Lévêque",
-		  "alumniOf": "École normale supérieure Paris-Saclay",
-		  "gender": "male",
-		  "nationality": "French",
-		  "url": "https://olivierleveque.com/",
-		  "sameAs": [
-		    "https://www.linkedin.com/in/oleveque/",
-		    "https://github.com/oleveque/",
-		    "https://hal.science/search/index/q/*/authIdHal_s/oleveque",
-		    "https://scholar.google.com/citations?user=TooV_xYAAAAJ"
-		  ],
-		  "jobTitle": "Research Scientist",
-		  "worksFor": {
-		    "@type": "Organization",
-		    "name": "ONERA, The French Aerospace Lab"
-		  }  
-		}
-		</script>
-	</body>
+            var a = document.createElement("a");
+            a.className = "text-decoration-none small";
+            a.href = item.href;
+
+            var i = document.createElement("i");
+            i.className = item.icon;
+            a.appendChild(i);
+
+            var icons = item.icon.split(';');
+            icons.forEach(icon => {
+                var i = document.createElement("i");
+                i.className = icon;
+                a.appendChild(i);
+            });
+
+            a.appendChild(document.createTextNode(" " + item.text));
+            li.appendChild(a);
+            ol.appendChild(li);
+        });
+
+        nav.appendChild(ol);
+        divCardBody.appendChild(nav);
+        
+        divCard.appendChild(divCardBody);
+        divCol.appendChild(divCard);
+        
+        document.getElementById(gridContainer).appendChild(divCol);
+      }
+    </script>
+    <script src="publications.js"></script>
+  </body>
 </html>
