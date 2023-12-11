@@ -51,14 +51,15 @@
   </head>
   <body>
     <!-- Banner -->
-    <div class="row align-items-center">
+    <div class="row border-bottom align-items-center">
       <!-- Banner / Image -->
-      <div class="col-sm-12 col-lg-6 p-0 vh-100">
+      <div class="col-sm-12 col-lg-6 p-0">
         <picture>
           <source type="image/webp" srcset="images/P9210365.webp">
           <img class="w-100 h-100 object-fit-cover" src="images/P9210365.jpg" alt="Olivier LÉVÊQUE">
         </picture>
       </div>
+      
       <!-- Banner / Description -->
       <div class="col-sm-12 col-lg-6 p-0">
         <div class="m-auto" style="max-width: 500px;">
@@ -78,9 +79,9 @@
 
     <!-- Bio -->
     <div class="container border-bottom" id="bio">
-      <div class="row align-items-center justify-content-md-center vh-100">
+      <div class="row pt-5 mb-5">
         <!-- Bio / Experiences -->
-        <div class="col-4">
+        <div class="col-sm-12 col-lg-4 pt-5 mb-5">
           <h2 class="fw-lighter mb-4">Last Experiences</h2>
           
           <div class="fw-lighter mb-1">Since 2022</div>
@@ -104,7 +105,7 @@
         </div>
 
         <!-- Bio / Education -->
-        <div class="col-4">
+        <div class="col-sm-12 col-lg-4 pt-5 mb-5">
           <h2 class="fw-lighter mb-4">Education</h2>
           
           <div class="fs-6 fw-lighter mb-1">2018 &ndash; 2022</div>
@@ -127,7 +128,7 @@
         </div>
 
         <!-- Bio / Others -->
-        <div class="col-4">
+        <div class="col-sm-12 col-lg-4 pt-5 mb-5">
           <img class="mx-auto d-block mb-4" src="images/mr_robotics.svg" alt="Mr. Robotics" width="160px" />
           <p class="fw-lighter text-center">
             I'm also passionate by Robotics.
@@ -148,24 +149,26 @@
     <div class="container border-bottom" id="publications">
       <!-- Publications -->
       <h2 class="fw-lighter pt-5">Publications</h2>
-      
+
+      <!-- Publications / Journal -->
       <h5 class="fw-lighter mb-4">Peer-reviewed scientific journal publications</h5>
       <div id="publi" class="row mb-2" data-masonry='{ "percentPosition": true }'></div>
-      
+
+      <!-- Publications / Proceedings -->
       <h5 class="fw-lighter mb-4">International conference proceedings</h5>
       <div id="publi-proc" class="row mb-2" data-masonry='{ "percentPosition": true }'></div>
 
+      <!-- Publications / Dissertation -->
       <h5 class="fw-lighter mb-4">PhD dissertation</h5>
-      <div id="publi-phd" class="row mb-5" data-masonry='{ "percentPosition": true }'></div>
-    
+      <div id="publi-phd" class="row mb-2" data-masonry='{ "percentPosition": true }'></div>
     </div>
     
     <!-- Footer -->
     <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
       <div class="col-md-4 d-flex align-items-center">
-        <a href="#" class="mb-4 me-3 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <div href="#" class="mb-4 me-3 mb-md-0 lh-1">
           <img src="assets/icon/favicon-32x32.png" width="32" height="32">
-        </a>
+        </div>
         <span class="mb-3 mb-md-0 text-body-secondary"><span id="current-year">2019</span></br>Designed with <a class="text-decoration-none" href="https://getbootstrap.com/">Bootstrap</a></br>Hosted on <a class="text-decoration-none" href="https://pages.github.com/">GitHub Pages</a></span>
       </div>
 
@@ -182,7 +185,8 @@
     
     <!-- Masonry 4.2.2 https://masonry.desandro.com/ -->
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-
+    
+    <!-- Custom scripts -->
     <script>
       document.getElementById('current-year').innerHTML = '2019 &ndash; '+new Date().getFullYear();
       function add(gridContainer, textContent, breadcrumbItems) {
