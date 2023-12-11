@@ -72,17 +72,28 @@ add(
 add(
   "publi-proc",
   "<strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail, \"Can better performance be obtained when an imaging system is co-optimized with a nonlinear deconvolution algorithm?,\"</br>Proc. SPIE 11866, Electro-Optical and Infrared Systems: Technology and Applications XVIII and Electro-Optical Remote Sensing XV, 118660A (13 September 2021)",
-  []
+  [
+    { text: "Closed access", icon: "ai ai-doi; bi bi-lock;", href: "https://doi.org/10.1117/12.2597122" },
+    { text: "HAL Open Archives", icon: "ai ai-hal;", href: "https://hal.science/hal-03368729" }
+  ]
 );
 add(
   "publi-proc",
   "<strong>O. Lévêque</strong>, C. Kulcsár, A. Lee, P. Bon, L. Cognet, and F. Goudail, \"How to assess depth-of-field extension strategies applied to single-molecule super-resolution microscopes?,\"</br>in <i>OSA Imaging and Applied Optics Congress 2021 (3D, COSI, DH, ISA, pcAOP)</i>, OSA Technical Digest (Optical Society of America, 2021), paper CF4B.5",
-  []
+  [
+    { text: "Closed access", icon: "ai ai-doi; bi bi-lock;", href: "https://doi.org/10.1364/COSI.2021.CF4B.5" },
+    { text: "HAL Open Archives", icon: "ai ai-hal;", href: "https://hal.science/hal-03417511" },
+    { text: "Free reading access", icon: "bi bi-file-earmark-pdf;", href: "https://hal.science/hal-03417511/document" }
+  ]
 );
 add(
   "publi-proc",
   "<strong>O. Lévêque</strong>, C. Kulcsár, H. Sauer, A. Lee, P. Bon, L. Cognet, and F. Goudail, \"Can phase masks extend depth-of-field in localization microscopy?,\"</br>Proc. SPIE 11351, Unconventional Optical Imaging II, 113510E (13 October 2020)",
-  []
+  [
+    { text: "Closed access", icon: "ai ai-doi; bi bi-lock;", href: "https://doi.org/10.1117/12.2558426" },
+    { text: "HAL Open Archives", icon: "ai ai-hal;", href: "https://hal.science/hal-03025685" },
+    { text: "Free reading access", icon: "bi bi-file-earmark-pdf;", href: "https://hal.science/hal-03025685/document" }
+  ]
 );
 
 /*
