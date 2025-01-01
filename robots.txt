@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: LICENSE.txt
-Disallow: README.md
-Disallow: /assets/
-Disallow: /images/

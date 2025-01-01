@@ -3,13 +3,11 @@ olivierleveque.com | Personal website
 Credits:
 
 	Design:
-		HTML5 UP (html5up.net)
+		Bootstrap (https://getbootstrap.com)
 	
 	Icons:
-		Font Awesome (fontawesome.io)
 		Academicons (jpswalsh.github.io/academicons)
+		Bootstrap Icons (https://icons.getbootstrap.com)
 
 	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+		Vite (https://vite.dev)
