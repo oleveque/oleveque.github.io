@@ -48,116 +48,116 @@
 
       <!-- Content -->
       <p>
-        <span class="ms-5 fs-5">U</span>ne grande majorité des systèmes d’imagerie est aujourd’hui constituée à la fois d’un système optique performant et de traitements numériques des images acquises.
-        Nous pouvons citer par exemple l’appareil photo de nos téléphones portables ou encore des systèmes d’imagerie scientifiques modernes, comme les télescopes ou les microscopes.
+        <span class="ms-5 fs-5">U</span>ne grande majorité des systèmes d'imagerie est aujourd'hui constituée à la fois d'un système optique performant et de traitements numériques des images acquises.
+        Nous pouvons citer par exemple l'appareil photo de nos téléphones portables ou encore des systèmes d'imagerie scientifiques modernes, comme les télescopes ou les microscopes.
         Concevoir conjointement le système optique et son traitement numérique est appelée <i>co-conception</i>.
-        Cette approche, bien que difficile à mettre en œuvre, est devenue nécessaire pour améliorer les performances d’imagerie et réduire certaines contraintes liées à leur conception.
-        Mes travaux de thèse, réalisés au sein de l'équipe <a class="text-decoration-none" href="https://www.lcf.institutoptique.fr/groupes-de-recherche/imagerie-et-information" target="_blank"><i>Imagerie & Information</i></a> du Laboratoire Charles Fabry, concernent l’extension de la profondeur de champ en microscopie par localisation en co-concevant des masques de phase binaires annulaires <a class="text-decoration-none" href="#refT1">[T1]</a>.
-        Cette technique de microscopie à fluorescence, récompensée par le <a class="text-decoration-none" href="https://www.nobelprize.org/prizes/chemistry/2014/summary/" target="_blank">prix Nobel de Chimie en 2014</a>, permet d’imager l’organisation de protéines dans une cellule vivante avec une résolution nanométrique et offre la possibilité de suivre leur dynamique au cours du temps.
+        Cette approche, bien que difficile à mettre en œuvre, est devenue nécessaire pour améliorer les performances d'imagerie et réduire certaines contraintes liées à leur conception.
+        Mes travaux de thèse, réalisés au sein de l'équipe <a class="text-decoration-none" href="https://www.lcf.institutoptique.fr/groupes-de-recherche/imagerie-et-information" target="_blank"><i>Imagerie & Information</i></a> du Laboratoire Charles Fabry, concernent l'extension de la profondeur de champ en microscopie par localisation en co-concevant des masques de phase binaires annulaires <a class="text-decoration-none" href="#refT1">[T1]</a>.
+        Cette technique de microscopie à fluorescence, récompensée par le <a class="text-decoration-none" href="https://www.nobelprize.org/prizes/chemistry/2014/summary/" target="_blank">prix Nobel de Chimie en 2014</a>, permet d'imager l'organisation de protéines dans une cellule vivante avec une résolution nanométrique et offre la possibilité de suivre leur dynamique au cours du temps.
       </p>
 
-      <p class="fs-5 fw-semibold">Qu’est qu’une profondeur de champ ?</p>
+      <p class="fs-5 fw-semibold">Qu'est qu'une profondeur de champ ?</p>
       <p>
-        <span class="ms-5">E</span>n théorie, un système d’imagerie ne comporte qu’un seul plan de netteté que l’on appelle communément plan de mise au point, ou plan focal.
-        Comme illustrée à la figure 1, l’image d’un objet situé en avant ou en arrière de ce plan est considérée comme floue.
-        On dit alors que l’objet est <i>défocalisé</i>.
-        On admet en pratique une certaine tolérance de netteté et donc l’existence de deux limites situées de part et d’autre de ce plan.
+        <span class="ms-5">E</span>n théorie, un système d'imagerie ne comporte qu'un seul plan de netteté que l'on appelle communément plan de mise au point, ou plan focal.
+        Comme illustrée à la figure 1, l'image d'un objet situé en avant ou en arrière de ce plan est considérée comme floue.
+        On dit alors que l'objet est <i>défocalisé</i>.
+        On admet en pratique une certaine tolérance de netteté et donc l'existence de deux limites situées de part et d'autre de ce plan.
         Tout objet se trouvant entre ces deux limites conduit alors à une image considérée comme nette.
         On appelle <i>profondeur de champ</i> la distance séparant ces deux plans.
       </p>
       <div class="mx-auto w-50"> 
         <figure class="figure">
           <img src="images/fig1.png" class="figure-img img-fluid img-thumbnail bg-white rounded" alt="...">
-          <figcaption class="figure-caption text-end"><b>Figure 1 :</b> Schéma de principe illustrant la profondeur de champ d’un système d’imagerie.</figcaption>
+          <figcaption class="figure-caption text-end"><b>Figure 1 :</b> Schéma de principe illustrant la profondeur de champ d'un système d'imagerie.</figcaption>
         </figure>
       </div>
 
-      <p class="fs-5 fw-semibold">Comment l’augmentons-nous habituellement ?</p>
+      <p class="fs-5 fw-semibold">Comment l'augmentons-nous habituellement ?</p>
       <p>
-        <span class="ms-5">M</span>on travail visait à augmenter cette distance afin d’obtenir un système d’imagerie doté d’une profondeur de champ étendue.
-        L’étendue de cette profondeur de champ dépend de plusieurs paramètres : l’ouverture du diaphragme de l’objectif, la distance de mise au point et les conditions d’observation.
-        Comme la plupart de ces paramètres sont imposés par le matériel utilisé, l’ouverture reste le principal réglage qui permet de modifier la profondeur de champ d’un système d’imagerie.
-        Elle est d’ailleurs souvent utilisée à cet effet en photographie.
-        Cependant, diminuer l’ouverture diminue aussi l’éclairement et la résolution transverse de l’image.
-        Cette méthode est donc rapidement limitée par les conditions réelles de la prise de vue : luminosité, vitesse d’obturation...
-        Dans certaines applications, comme la microscopie à fluorescence, les conditions de luminosité sont si contraignantes que diminuer l’ouverture est en fait impossible.
+        <span class="ms-5">M</span>on travail visait à augmenter cette distance afin d'obtenir un système d'imagerie doté d'une profondeur de champ étendue.
+        L'étendue de cette profondeur de champ dépend de plusieurs paramètres : l'ouverture du diaphragme de l'objectif, la distance de mise au point et les conditions d'observation.
+        Comme la plupart de ces paramètres sont imposés par le matériel utilisé, l'ouverture reste le principal réglage qui permet de modifier la profondeur de champ d'un système d'imagerie.
+        Elle est d'ailleurs souvent utilisée à cet effet en photographie.
+        Cependant, diminuer l'ouverture diminue aussi l'éclairement et la résolution transverse de l'image.
+        Cette méthode est donc rapidement limitée par les conditions réelles de la prise de vue : luminosité, vitesse d'obturation...
+        Dans certaines applications, comme la microscopie à fluorescence, les conditions de luminosité sont si contraignantes que diminuer l'ouverture est en fait impossible.
       </p>
 
       <p class="fs-5 fw-semibold">La co-conception peut-elle servir à augmenter la profondeur de champ ?</p>
       <p>
-        <span class="ms-5">E</span>n 1995, E. Dowski et W. Cathey proposent de co-concevoir un système d’imagerie pour étendre sa profondeur de champ sans en modifier l’ouverture.
-        Cette approche repose sur l’ajout d’une lame de verre, appelée <i>masque de phase</i>, et d’un traitement numérique adapté des images acquises.
-        À la manière d’un verre correcteur de lunette, le masque, dont l’épaisseur varie spatialement, introduit une modulation de phase permettant de modifier la réponse impulsionnelle du système.
+        <span class="ms-5">E</span>n 1995, E. Dowski et W. Cathey proposent de co-concevoir un système d'imagerie pour étendre sa profondeur de champ sans en modifier l'ouverture.
+        Cette approche repose sur l'ajout d'une lame de verre, appelée <i>masque de phase</i>, et d'un traitement numérique adapté des images acquises.
+        À la manière d'un verre correcteur de lunette, le masque, dont l'épaisseur varie spatialement, introduit une modulation de phase permettant de modifier la réponse impulsionnelle du système.
         Les images ainsi produites sont invariantes à la défocalisation.
         La profondeur de champ du système est donc étendue.
       </p>
       <p>
-        <span class="ms-5">E</span>n portant une attention particulière aux masques de variations d’épaisseur binaires et de symétrie de révolution (autrement dit, <i>binaires annulaires</i>), mes travaux ont permis de déterminer le couple optimal &mdash; design du masque + traitement &mdash; permettant d’atteindre les meilleures performances d’imagerie.
-        Pour mener cette étude, j’ai distingué deux applications.</p>
+        <span class="ms-5">E</span>n portant une attention particulière aux masques de variations d'épaisseur binaires et de symétrie de révolution (autrement dit, <i>binaires annulaires</i>), mes travaux ont permis de déterminer le couple optimal &mdash; design du masque + traitement &mdash; permettant d'atteindre les meilleures performances d'imagerie.
+        Pour mener cette étude, j'ai distingué deux applications.</p>
 
       <p class="fs-5 fw-semibold">Application à la photographie computationnelle</p>
       <p>
         <span class="ms-5">D</span>ans la première, le produit final est une image restaurée par un algorithme de déconvolution.
-        J’ai montré que les masques binaires annulaires optimaux obtenus avec un critère linéaire (basé sur le filtre de Wiener) sont pratiquement identiques à ceux optimisés avec un critère plus complexe basé sur une méthode de déconvolution non linéaire <a class="text-decoration-none" href="#refA2">[A2]</a>.
+        J'ai montré que les masques binaires annulaires optimaux obtenus avec un critère linéaire (basé sur le filtre de Wiener) sont pratiquement identiques à ceux optimisés avec un critère plus complexe basé sur une méthode de déconvolution non linéaire <a class="text-decoration-none" href="#refA2">[A2]</a>.
         Ce résultat justifie une pratique fréquente de co-conception.
-        Elle consiste à accélérer considérablement l’étape d’optimisation à l’aide d’un critère analytique simple.
+        Elle consiste à accélérer considérablement l'étape d'optimisation à l'aide d'un critère analytique simple.
         Les images acquises sont ensuite restaurées avec un algorithme non linéaire, pour obtenir une meilleure qualité image.
       </p>
 
       <p class="fs-5 fw-semibold">Application à la localisation de molécule unique</p>
       <p>
         <span class="ms-5">L</span>a seconde application, au cœur de mon travail de thèse, porte sur la microscopie par localisation de molécule unique, aussi appelée <i>Single Molecule Localization Microscopy</i> (SMLM).
-        L'image acquise n’est plus restaurée mais sert à estimer une autre information : la position ou la présence d'un marqueur fluorescent individuel.
-        J’ai donc proposé un critère d’optimisation des masques reposant non plus sur la qualité d’une image restaurée mais sur la précision avec laquelle un marqueur peut être localisé <a class="text-decoration-none" href="#refA1">[A1]</a>.
+        L'image acquise n'est plus restaurée mais sert à estimer une autre information : la position ou la présence d'un marqueur fluorescent individuel.
+        J'ai donc proposé un critère d'optimisation des masques reposant non plus sur la qualité d'une image restaurée mais sur la précision avec laquelle un marqueur peut être localisé <a class="text-decoration-none" href="#refA1">[A1]</a>.
       </p>
       <p>
-        <span class="ms-5">C</span>ette méthodologie, basée sur la borne de Cramér-Rao (BCR), permet d’optimiser des masques d’extension de profondeur de champ dans des conditions expérimentales réalistes.
-        Ces conditions dépendent d’un certain nombre de paramètres optiques dont j’ai déterminé l’influence.
-        J’ai ainsi mis en évidence les conditions expérimentales dans lesquelles les techniques d’extension de la profondeur de champ en <abbr title="Single Molecule Localization Microscopy">SMLM</abbr> peuvent être efficaces.
+        <span class="ms-5">C</span>ette méthodologie, basée sur la borne de Cramér-Rao (BCR), permet d'optimiser des masques d'extension de profondeur de champ dans des conditions expérimentales réalistes.
+        Ces conditions dépendent d'un certain nombre de paramètres optiques dont j'ai déterminé l'influence.
+        J'ai ainsi mis en évidence les conditions expérimentales dans lesquelles les techniques d'extension de la profondeur de champ en <abbr title="Single Molecule Localization Microscopy">SMLM</abbr> peuvent être efficaces.
       </p>
       <p>
-        <span class="ms-5">J</span>’ai commencé par étudier l’influence des sources dominantes de bruit sur l’optimisation des masques.
-        J’ai montré que les masques optimaux dépendent d’une grandeur appelée <i>bilan photonique</i>.
+        <span class="ms-5">J</span>'ai commencé par étudier l'influence des sources dominantes de bruit sur l'optimisation des masques.
+        J'ai montré que les masques optimaux dépendent d'une grandeur appelée <i>bilan photonique</i>.
         Celui-ci est généralement faible puisque les masques de phase atténuent le signal de fluorescence.
-        Je montre que, dans ces conditions, les masques optimisés en supposant un bruit additif gaussien (et non poissonnien) ont des performances proches de l’optimalité même lorsque le bruit de Poisson est dominant.
+        Je montre que, dans ces conditions, les masques optimisés en supposant un bruit additif gaussien (et non poissonnien) ont des performances proches de l'optimalité même lorsque le bruit de Poisson est dominant.
       </p>
       <p>
-        <span class="ms-5">J</span>’ai également vérifié que, dans la majorité des conditions expérimentales rencontrées en pratique, la <abbr title="Borne de Cramér-Rao">BCR</abbr> est un indicateur fiable de la précision de localisation <a class="text-decoration-none" href="#refA4">[A4]</a>.
-        Lorsque la racine carrée de la <abbr title="Borne de Cramér-Rao">BCR</abbr> (RBCR) est inférieure à 20 nm, j’ai montré que l’estimateur du maximum de vraisemblance &mdash; standard pour un marqueur situé dans le plan focal ou adapté aux masques optimaux dans le cas contraire &mdash; atteint la précision de localisation prédite par la <abbr title="Borne de Cramér-Rao">BCR</abbr>.
-        À l’inverse, si les conditions expérimentales sont telles que <abbr title="Racine carrée de la borne de Cramér-Rao">RBCR</abbr> > 20 nm, les résultats publiés dans l’article <a class="text-decoration-none" href="#refA4">[A4]</a> peuvent être utilisés comme des abaques pour caractériser l’écart entre les performances réelles des estimateurs et la <abbr title="Borne de Cramér-Rao">BCR</abbr>.
+        <span class="ms-5">J</span>'ai également vérifié que, dans la majorité des conditions expérimentales rencontrées en pratique, la <abbr title="Borne de Cramér-Rao">BCR</abbr> est un indicateur fiable de la précision de localisation <a class="text-decoration-none" href="#refA4">[A4]</a>.
+        Lorsque la racine carrée de la <abbr title="Borne de Cramér-Rao">BCR</abbr> (RBCR) est inférieure à 20 nm, j'ai montré que l'estimateur du maximum de vraisemblance &mdash; standard pour un marqueur situé dans le plan focal ou adapté aux masques optimaux dans le cas contraire &mdash; atteint la précision de localisation prédite par la <abbr title="Borne de Cramér-Rao">BCR</abbr>.
+        À l'inverse, si les conditions expérimentales sont telles que <abbr title="Racine carrée de la borne de Cramér-Rao">RBCR</abbr> > 20 nm, les résultats publiés dans l'article <a class="text-decoration-none" href="#refA4">[A4]</a> peuvent être utilisés comme des abaques pour caractériser l'écart entre les performances réelles des estimateurs et la <abbr title="Borne de Cramér-Rao">BCR</abbr>.
       </p>
       <p>
-        <span class="ms-5">J</span>’ai ensuite amélioré l’environnement de simulation en prenant en compte un modèle de formation d’image plus réaliste que l’approximation quadratique (AQ), couramment utilisée dans la littérature pour représenter un défaut de mise au point.
-        J’ai donc utilisé le modèle de Gibson et Lanni (GL).
-        Celui-ci prend en compte de manière plus précise les aberrations optiques provenant de la forte ouverture numérique des objectifs de microscope et de l’écart entre les indices de réfraction du milieu biologique et du milieu d’immersion.
-        L’utilisation de ce modèle exerce une influence importante sur l’optimisation des masques.
-        Cependant, je suis parvenu à établir une relation d’équivalence simple entre les masques optimaux obtenus dans le cadre du modèle <abbr title="Gibson et Lanni">GL</abbr> et ceux obtenus à partir du modèle <abbr title="Approximation quadratique">AQ</abbr> <a class="text-decoration-none" href="#refA3">[A3]</a>.
-        Ce résultat permet d’optimiser des masques génériques sans avoir besoin de connaître précisément tous les paramètres optiques du microscope.
+        <span class="ms-5">J</span>'ai ensuite amélioré l'environnement de simulation en prenant en compte un modèle de formation d'image plus réaliste que l'approximation quadratique (AQ), couramment utilisée dans la littérature pour représenter un défaut de mise au point.
+        J'ai donc utilisé le modèle de Gibson et Lanni (GL).
+        Celui-ci prend en compte de manière plus précise les aberrations optiques provenant de la forte ouverture numérique des objectifs de microscope et de l'écart entre les indices de réfraction du milieu biologique et du milieu d'immersion.
+        L'utilisation de ce modèle exerce une influence importante sur l'optimisation des masques.
+        Cependant, je suis parvenu à établir une relation d'équivalence simple entre les masques optimaux obtenus dans le cadre du modèle <abbr title="Gibson et Lanni">GL</abbr> et ceux obtenus à partir du modèle <abbr title="Approximation quadratique">AQ</abbr> <a class="text-decoration-none" href="#refA3">[A3]</a>.
+        Ce résultat permet d'optimiser des masques génériques sans avoir besoin de connaître précisément tous les paramètres optiques du microscope.
       </p>
       <p>
-        <span class="ms-5">P</span>our finir, je me suis intéressé à la chaîne de traitement complète des images <abbr title="Single Molecule Localization Microscopy">SMLM</abbr> pour déterminer l’influence des masques de phase sur l’étape de détection.
-        Cette étape, aussi appelé <i>pré-localisation</i>, précède toujours l’étape de localisation sous-pixellique des marqueurs fluorescents.
-        J’ai proposé un nouveau critère d’optimisation basé sur la distance de Bhattacharyya pour déterminer le masque qui maximise la probabilité de détection d’un fluorophore dans un volume imagé.
+        <span class="ms-5">P</span>our finir, je me suis intéressé à la chaîne de traitement complète des images <abbr title="Single Molecule Localization Microscopy">SMLM</abbr> pour déterminer l'influence des masques de phase sur l'étape de détection.
+        Cette étape, aussi appelé <i>pré-localisation</i>, précède toujours l'étape de localisation sous-pixellique des marqueurs fluorescents.
+        J'ai proposé un nouveau critère d'optimisation basé sur la distance de Bhattacharyya pour déterminer le masque qui maximise la probabilité de détection d'un fluorophore dans un volume imagé.
         Cette étude a révélé que, pour un bilan photonique faible, les masques optimaux pour la détection sont similaires à ceux optimisés pour la localisation <a class="text-decoration-none" href="#refA6">[A6]</a>.
       </p>
       <p>
-        <span class="ms-5">M</span>algré les contraintes et le retard liés à la crise sanitaire, j’ai eu la chance de pouvoir commencer la validation expérimentale des masques de phase binaires annulaires pour l’extension de la profondeur de champ en imagerie à molécule unique.
-        Ce travail a été réalisé avec la collaboration de l’équipe <a class="text-decoration-none" href="https://www.lp2n.institutoptique.fr/node/761" target="_blank"><i>Nano-BioMicroscopy</i></a> du Laboratoire Photonique, Numérique et Nanosciences à Bordeaux.
-        L’extension de la profondeur de champ apportée par mes masques a pu être testée en conditions réelles sur le système illustré à la figure 2.
+        <span class="ms-5">M</span>algré les contraintes et le retard liés à la crise sanitaire, j'ai eu la chance de pouvoir commencer la validation expérimentale des masques de phase binaires annulaires pour l'extension de la profondeur de champ en imagerie à molécule unique.
+        Ce travail a été réalisé avec la collaboration de l'équipe <a class="text-decoration-none" href="https://www.lp2n.institutoptique.fr/node/761" target="_blank"><i>Nano-BioMicroscopy</i></a> du Laboratoire Photonique, Numérique et Nanosciences à Bordeaux.
+        L'extension de la profondeur de champ apportée par mes masques a pu être testée en conditions réelles sur le système illustré à la figure 2.
       </p>
       <div class="mx-auto w-75">
         <figure class="figure">
           <img src="images/fig2.png" class="figure-img img-fluid img-thumbnail bg-white rounded" alt="...">
-          <figcaption class="figure-caption text-end"><b>Figure 2 :</b> Montage expérimental d’un microscope optique dont la profondeur de champ est étendue à l’aide d’un masque de phase placé dans un module <var>4f</var>.</figcaption>
+          <figcaption class="figure-caption text-end"><b>Figure 2 :</b> Montage expérimental d'un microscope optique dont la profondeur de champ est étendue à l'aide d'un masque de phase placé dans un module <var>4f</var>.</figcaption>
         </figure>
       </div>
       <p>
-        <span class="ms-5">L</span>es résultats de ces expériences ont confirmé la pertinence de cette approche et ont ouvert des perspectives intéressantes aujourd’hui explorées par plusieurs thèses.
-        L’efficacité de mes masques a d’ailleurs été démontré par Quentin Grésil de l’équipe Nano-BioMicroscopy dans une expérience de <i>single-particle tracking</i> <a class="text-decoration-none" href="#refA5">[A5]</a>.
+        <span class="ms-5">L</span>es résultats de ces expériences ont confirmé la pertinence de cette approche et ont ouvert des perspectives intéressantes aujourd'hui explorées par plusieurs thèses.
+        L'efficacité de mes masques a d'ailleurs été démontré par Quentin Grésil de l'équipe Nano-BioMicroscopy dans une expérience de <i>single-particle tracking</i> <a class="text-decoration-none" href="#refA5">[A5]</a>.
       </p>
       <p>
-        <span class="ms-5">L</span>’ensemble de mon travail m’a conduit à publier dans différentes revues scientifiques, à participer à des congrès scientifiques internationaux <a class="text-decoration-none" href="#refC">[C1-3]</a> et à encadrer plusieurs stages.
-        Je remercie le <a class="text-decoration-none" href="https://gdr-iasis.cnrs.fr" target="_blank">GdR IASIS</a> (Information, Apprentissage, Signal, Image et ViSion) pour son soutien au travers de l’appel à projets 2019.
+        <span class="ms-5">L</span>'ensemble de mon travail m'a conduit à publier dans différentes revues scientifiques, à participer à des congrès scientifiques internationaux <a class="text-decoration-none" href="#refC">[C1-3]</a> et à encadrer plusieurs stages.
+        Je remercie le <a class="text-decoration-none" href="https://gdr-iasis.cnrs.fr" target="_blank">GdR IASIS</a> (Information, Apprentissage, Signal, Image et ViSion) pour son soutien au travers de l'appel à projets 2019.
       </p>
 
       <p class="fs-5 fw-semibold">Publications dans des revues scientifiques</p>
