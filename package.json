@@ -1,0 +1,28 @@
+{
+  "name": "oleveque.github.io",
+  "version": "2.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "vite": "vite",
+    "build": "vite build",
+    "test": "vite --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleveque/oleveque.github.io.git"
+  },
+  "author": "Olivier Lévêque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleveque/oleveque.github.io/issues"
+  },
+  "homepage": "https://github.com/oleveque/oleveque.github.io#readme",
+  "dependencies": {
+    "academicons": "^1.9.2",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "devDependencies": {
+    "vite": "^6.0.6"
+  }
+}
