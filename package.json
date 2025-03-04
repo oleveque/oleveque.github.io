@@ -23,6 +23,6 @@
     "bootstrap-icons": "^1.11.3"
   },
   "devDependencies": {
-    "vite": "^6.0.6"
+    "vite": "^6.2.0"
   }
 }
