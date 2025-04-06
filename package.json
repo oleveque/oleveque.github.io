@@ -19,10 +19,10 @@
   "homepage": "https://github.com/oleveque/oleveque.github.io#readme",
   "dependencies": {
     "academicons": "^1.9.2",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3"
   },
   "devDependencies": {
-    "vite": "^6.2.4"
+    "vite": "^6.2.5"
   }
 }
