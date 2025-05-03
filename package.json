@@ -20,7 +20,7 @@
   "dependencies": {
     "academicons": "^1.9.2",
     "bootstrap": "^5.3.5",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.4"
   },
   "devDependencies": {
     "vite": "^6.3.4"
