@@ -38,7 +38,7 @@
     <!-- Styles -->
     <style type="text/css">@charset "UTF-8";
 /*!
- * Bootstrap  v5.3.7 (https://getbootstrap.com/)
+ * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -110,6 +110,7 @@ legend+*{clear:left}
 ::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}
 ::-webkit-inner-spin-button{height:auto}
 [type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-cancel-button{cursor:pointer;filter:grayscale(1)}
 ::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-color-swatch-wrapper{padding:0}
 ::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}
@@ -767,7 +768,7 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + calc(var(--bs-border-wid
 .carousel-dark{--bs-carousel-indicator-active-bg:#000;--bs-carousel-caption-color:#000;--bs-carousel-control-icon-filter:invert(1) grayscale(100)}
 :root,[data-bs-theme=light]{--bs-carousel-indicator-active-bg:#fff;--bs-carousel-caption-color:#fff;--bs-carousel-control-icon-filter: }
 [data-bs-theme=dark]{--bs-carousel-indicator-active-bg:#000;--bs-carousel-caption-color:#000;--bs-carousel-control-icon-filter:invert(1) grayscale(100)}
-.spinner-border,.spinner-grow{display:inline-block;width:var(--bs-spinner-width);height:var(--bs-spinner-height);vertical-align:var(--bs-spinner-vertical-align);border-radius:50%;animation:var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name)}
+.spinner-border,.spinner-grow{display:inline-block;flex-shrink:0;width:var(--bs-spinner-width);height:var(--bs-spinner-height);vertical-align:var(--bs-spinner-vertical-align);border-radius:50%;animation:var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name)}
 @keyframes spinner-border{to{transform:rotate(360deg)}}
 .spinner-border{--bs-spinner-width:2rem;--bs-spinner-height:2rem;--bs-spinner-vertical-align:-0.125em;--bs-spinner-border-width:0.25em;--bs-spinner-animation-speed:0.75s;--bs-spinner-animation-name:spinner-border;border:var(--bs-spinner-border-width) solid currentcolor;border-right-color:transparent}
 .spinner-border-sm{--bs-spinner-width:1rem;--bs-spinner-height:1rem;--bs-spinner-border-width:0.2em}
@@ -3432,7 +3433,7 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + calc(var(--bs-border-wid
 .bi-globe-asia-australia-fill::before{content:"\f91c"}
 .bi-globe-central-south-asia-fill::before{content:"\f91d"}
 .bi-globe-europe-africa-fill::before{content:"\f91e"}
-@font-face {font-family: 'Academicons';font-style: normal;font-weight: 400;font-display: block;src:url('/assets/academicons-C1yYP4s7.eot');src:url('/assets/academicons-C1yYP4s7.eot') format('embedded-opentype'), url('/assets/academicons-BP0b9ZVZ.ttf') format('truetype'), url('/assets/academicons-CMs77YS6.woff') format('woff'), url('/assets/academicons-az-davyV.svg') format('svg');}
+@font-face {font-family: 'Academicons';font-style: normal;font-weight: 400;font-display: block;src:url('/assets/academicons-C4eoQBbL.eot');src:url('/assets/academicons-C4eoQBbL.eot') format('embedded-opentype'), url('/assets/academicons-Chpm_rBH.ttf') format('truetype'), url('/assets/academicons-B7_RQkEg.woff') format('woff'), url('/assets/academicons-KIG-UakN.svg') format('svg');}
 .ai {font-family: 'Academicons';font-weight: 400;-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;line-height: 1;}
 .ai-academia:before {content: "\e9af";}
 .ai-academia-square:before {content: "\e93d";}
@@ -3456,6 +3457,8 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + calc(var(--bs-border-wid
 .ai-ceur-square:before {content: "\e92f";}
 .ai-ciencia-vitae:before {content: "\e912";}
 .ai-ciencia-vitae-square:before {content: "\e913";}
+.ai-clarivate:before {content: "\e924";}
+.ai-clarivate-square:before {content: "\e925";}
 .ai-closed-access:before {content: "\e942";}
 .ai-closed-access-square:before {content: "\e943";}
 .ai-conversation:before {content: "\e94c";}
@@ -3502,6 +3505,8 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + calc(var(--bs-border-wid
 .ai-inspire-square:before {content: "\e9fe";}
 .ai-isidore:before {content: "\e936";}
 .ai-isidore-square:before {content: "\e954";}
+.ai-isni:before {content: "\e957";}
+.ai-isni-square:before {content: "\e958";}
 .ai-jstor:before {content: "\e938";}
 .ai-jstor-square:before {content: "\e944";}
 .ai-lattes:before {content: "\e9b3";}
@@ -3568,7 +3573,12 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + calc(var(--bs-border-wid
 .ai-ssrn-square:before {content: "\e917";}
 .ai-stackoverflow:before {content: "\e920";}
 .ai-stackoverflow-square:before {content: "\e921";}
+.ai-viaf:before {content: "\e933";}
+.ai-viaf-square:before {content: "\e934";}
+.ai-wiley:before {content: "\e926";}
+.ai-wiley-square:before {content: "\e927";}
 .ai-zenodo:before {content: "\e911";}
+.ai-zenodo-square:before {content: "\e904";}
 .ai-zotero:before {content: "\e962";}
 .ai-zotero-square:before {content: "\e932";}
 .ai-lg {font-size: 1.33333em;line-height: 0.75em;vertical-align: -.0667em;}
