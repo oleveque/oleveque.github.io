@@ -3590,29 +3590,34 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + calc(var(--bs-border-wid
 .ai-stack-1x {line-height: inherit;}
 .ai-stack-2x {font-size: 2em;}
 .ai-inverse {color: #fff;}
+:root {
+  --accent: #ED6A17;
+  --accent-hover: #c95b15;
+  --gray: #30363d;
+}
 ::selection {
-  background: #ED6A17;
+  background: var(--accent);
 }
 a.text-decoration-none {
-  color: #ED6A17!important;
+  color: var(--accent) !important;
 }
 a.text-decoration-none:hover {
-  color: #c95b15!important;
+  color: var(--accent-hover) !important;
 }
 .btn-orange {
   --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #ED6A17;
-  --bs-btn-color: #30363d;
+  --bs-btn-hover-bg: var(--accent);
+  --bs-btn-color: var(--gray);
   --bs-btn-bg: var(--bs-white);
 }
 .link-icon:hover {
-  color: #ED6A17!important;
+  color: var(--accent) !important;
 }
 .bg-gray {
-  background-color: #30363d;
+  background-color: var(--gray);
 }
 .bg-orange {
-  background-color: #ED6A17;
+  background-color: var(--accent);
 }
 .vh-25 {
   height: 25vh;
@@ -3636,18 +3641,18 @@ a.text-decoration-none:hover {
       <!-- Title -->
       <div class="position-relative">
         <div class="position-absolute top-50 start-50 translate-middle z-n1">
-          <img src="/assets/title-CmHcuL3Q.png" class="figure-img img-fluid" width="150px">
+          <img src="/assets/title-CmHcuL3Q.png" class="figure-img img-fluid" width="150" alt="">
         </div>
         <h1 class="text-center w-75 mx-auto mt-5 mb-5">
-          <strong class="display-5 fw-light">Co-conception de systèmes d'imagerie pour l'extension de profondeur de champ</strong></br>
+          <strong class="display-5 fw-light">Co-conception de systèmes d'imagerie pour l'extension de profondeur de champ</strong><br>
           <small class="fw-lighter text-body-secondary">Application à la localisation de molécule unique</small>
         </h1>
       </div>
 
       <!-- Buttons -->
       <div class="d-flex gap-2 mb-5">
-        <a class="ms-auto btn btn-sm btn-orange rounded-pill ps-3 pe-3" href="https://pastel.hal.science/tel-03583892/document" role="button" target="_blank">Lire le manuscript</a>
-        <a class="me-auto btn btn-sm btn-orange rounded-pill ps-3 pe-3" href="https://youtu.be/sP8NO8JgrYU" role="button" target="_blank">Ma Thèse en 180s</a>
+        <a class="ms-auto btn btn-sm btn-orange rounded-pill ps-3 pe-3" href="https://pastel.hal.science/tel-03583892/document" role="button" target="_blank" rel="noopener noreferrer">Lire le manuscrit</a>
+        <a class="me-auto btn btn-sm btn-orange rounded-pill ps-3 pe-3" href="https://youtu.be/sP8NO8JgrYU" role="button" target="_blank" rel="noopener noreferrer">Ma Thèse en 180s</a>
       </div>
 
       <!-- Content -->
@@ -3656,11 +3661,11 @@ a.text-decoration-none:hover {
         Nous pouvons citer par exemple l'appareil photo de nos téléphones portables ou encore des systèmes d'imagerie scientifiques modernes, comme les télescopes ou les microscopes.
         Concevoir conjointement le système optique et son traitement numérique est appelée <i>co-conception</i>.
         Cette approche, bien que difficile à mettre en œuvre, est devenue nécessaire pour améliorer les performances d'imagerie et réduire certaines contraintes liées à leur conception.
-        Mes travaux de thèse, réalisés au sein de l'équipe <a class="text-decoration-none" href="https://www.lcf.institutoptique.fr/groupes-de-recherche/imagerie-et-information" target="_blank"><i>Imagerie & Information</i></a> du Laboratoire Charles Fabry, concernent l'extension de la profondeur de champ en microscopie par localisation en co-concevant des masques de phase binaires annulaires <a class="text-decoration-none" href="#refT1">[T1]</a>.
-        Cette technique de microscopie à fluorescence, récompensée par le <a class="text-decoration-none" href="https://www.nobelprize.org/prizes/chemistry/2014/summary/" target="_blank">prix Nobel de Chimie en 2014</a>, permet d'imager l'organisation de protéines dans une cellule vivante avec une résolution nanométrique et offre la possibilité de suivre leur dynamique au cours du temps.
+        Mes travaux de thèse, réalisés au sein de l'équipe <a class="text-decoration-none" href="https://www.lcf.institutoptique.fr/groupes-de-recherche/imagerie-et-information" target="_blank" rel="noopener noreferrer"><i>Imagerie & Information</i></a> du Laboratoire Charles Fabry, concernent l'extension de la profondeur de champ en microscopie par localisation en co-concevant des masques de phase binaires annulaires <a class="text-decoration-none" href="#refT1">[T1]</a>.
+        Cette technique de microscopie à fluorescence, récompensée par le <a class="text-decoration-none" href="https://www.nobelprize.org/prizes/chemistry/2014/summary/" target="_blank" rel="noopener noreferrer">prix Nobel de Chimie en 2014</a>, permet d'imager l'organisation de protéines dans une cellule vivante avec une résolution nanométrique et offre la possibilité de suivre leur dynamique au cours du temps.
       </p>
 
-      <p class="fs-5 fw-semibold">Qu'est qu'une profondeur de champ ?</p>
+      <p class="fs-5 fw-semibold">Qu'est-ce qu'une profondeur de champ ?</p>
       <p>
         <span class="ms-5">E</span>n théorie, un système d'imagerie ne comporte qu'un seul plan de netteté que l'on appelle communément plan de mise au point, ou plan focal.
         Comme illustrée à la figure 1, l'image d'un objet situé en avant ou en arrière de ce plan est considérée comme floue.
@@ -3671,7 +3676,7 @@ a.text-decoration-none:hover {
       </p>
       <div class="mx-auto w-50"> 
         <figure class="figure">
-          <img src="/assets/fig1-D3zjscDL.png" class="figure-img img-fluid img-thumbnail bg-white rounded" alt="...">
+          <img src="/assets/fig1-D3zjscDL.png" class="figure-img img-fluid img-thumbnail bg-white rounded" alt="Schéma de principe illustrant la profondeur de champ d'un système d'imagerie.">
           <figcaption class="figure-caption text-end"><b>Figure 1 :</b> Schéma de principe illustrant la profondeur de champ d'un système d'imagerie.</figcaption>
         </figure>
       </div>
@@ -3740,28 +3745,28 @@ a.text-decoration-none:hover {
       </p>
       <p>
         <span class="ms-5">P</span>our finir, je me suis intéressé à la chaîne de traitement complète des images <abbr title="Single Molecule Localization Microscopy">SMLM</abbr> pour déterminer l'influence des masques de phase sur l'étape de détection.
-        Cette étape, aussi appelé <i>pré-localisation</i>, précède toujours l'étape de localisation sous-pixellique des marqueurs fluorescents.
+        Cette étape, aussi appelée <i>pré-localisation</i>, précède toujours l'étape de localisation sous-pixellique des marqueurs fluorescents.
         J'ai proposé un nouveau critère d'optimisation basé sur la distance de Bhattacharyya pour déterminer le masque qui maximise la probabilité de détection d'un fluorophore dans un volume imagé.
         Cette étude a révélé que, pour un bilan photonique faible, les masques optimaux pour la détection sont similaires à ceux optimisés pour la localisation <a class="text-decoration-none" href="#refA6">[A6]</a>.
       </p>
       <p>
         <span class="ms-5">M</span>algré les contraintes et le retard liés à la crise sanitaire, j'ai eu la chance de pouvoir commencer la validation expérimentale des masques de phase binaires annulaires pour l'extension de la profondeur de champ en imagerie à molécule unique.
-        Ce travail a été réalisé avec la collaboration de l'équipe <a class="text-decoration-none" href="https://www.lp2n.institutoptique.fr/node/761" target="_blank"><i>Nano-BioMicroscopy</i></a> du Laboratoire Photonique, Numérique et Nanosciences à Bordeaux.
+        Ce travail a été réalisé avec la collaboration de l'équipe <a class="text-decoration-none" href="https://www.lp2n.institutoptique.fr/node/761" target="_blank" rel="noopener noreferrer"><i>Nano-BioMicroscopy</i></a> du Laboratoire Photonique, Numérique et Nanosciences à Bordeaux.
         L'extension de la profondeur de champ apportée par mes masques a pu être testée en conditions réelles sur le système illustré à la figure 2.
       </p>
       <div class="mx-auto w-75">
         <figure class="figure">
-          <img src="/assets/fig2-JIQNQLLn.png" class="figure-img img-fluid img-thumbnail bg-white rounded" alt="...">
+          <img src="/assets/fig2-JIQNQLLn.png" class="figure-img img-fluid img-thumbnail bg-white rounded" alt="Montage expérimental d'un microscope optique dont la profondeur de champ est étendue à l'aide d'un masque de phase placé dans un module 4f.">
           <figcaption class="figure-caption text-end"><b>Figure 2 :</b> Montage expérimental d'un microscope optique dont la profondeur de champ est étendue à l'aide d'un masque de phase placé dans un module <var>4f</var>.</figcaption>
         </figure>
       </div>
       <p>
         <span class="ms-5">L</span>es résultats de ces expériences ont confirmé la pertinence de cette approche et ont ouvert des perspectives intéressantes aujourd'hui explorées par plusieurs thèses.
-        L'efficacité de mes masques a d'ailleurs été démontré par Quentin Grésil de l'équipe Nano-BioMicroscopy dans une expérience de <i>single-particle tracking</i> <a class="text-decoration-none" href="#refA5">[A5]</a>.
+        L'efficacité de mes masques a d'ailleurs été démontrée par Quentin Grésil de l'équipe Nano-BioMicroscopy dans une expérience de <i>single-particle tracking</i> <a class="text-decoration-none" href="#refA5">[A5]</a>.
       </p>
       <p>
         <span class="ms-5">L</span>'ensemble de mon travail m'a conduit à publier dans différentes revues scientifiques, à participer à des congrès scientifiques internationaux <a class="text-decoration-none" href="#refC">[C1-3]</a> et à encadrer plusieurs stages.
-        Je remercie le <a class="text-decoration-none" href="https://gdr-iasis.cnrs.fr" target="_blank">GdR IASIS</a> (Information, Apprentissage, Signal, Image et ViSion) pour son soutien au travers de l'appel à projets 2019.
+        Je remercie le <a class="text-decoration-none" href="https://gdr-iasis.cnrs.fr" target="_blank" rel="noopener noreferrer">GdR IASIS</a> (Information, Apprentissage, Signal, Image et ViSion) pour son soutien au travers de l'appel à projets 2019.
       </p>
 
       <hr>
@@ -3772,15 +3777,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, C. Kulcsár, A. Lee, H. Sauer, A. Aleksanyan, P. Bon, L. Cognet, and F. Goudail, "Co-designed annular binary phase masks for depth-of-field extension in single-molecule localization microscopy," Opt. Express 28, 32426-32446 (2020)
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1364/OE.402752" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1364/OE.402752" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-open-access"></i> <small>Open access</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03025638" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03025638" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://www.osapublishing.org/osac/viewmedia.cfm?uri=oe-28-22-32426" target="_blank">
+            <a class="text-decoration-none" href="https://www.osapublishing.org/osac/viewmedia.cfm?uri=oe-28-22-32426" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Reading access</small>
             </a>
@@ -3790,15 +3795,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail, "Comparison of linear and nonlinear deconvolution algorithms for co-optimization of depth-of-field enhancing binary phase masks," OSA Continuum 4, 589-601 (2021)
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1364/OSAC.415925" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1364/OSAC.415925" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-open-access"></i> <small>Open access</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03128047" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03128047" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://www.osapublishing.org/osac/viewmedia.cfm?uri=osac-4-2-589" target="_blank">
+            <a class="text-decoration-none" href="https://www.osapublishing.org/osac/viewmedia.cfm?uri=osac-4-2-589" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Reading access</small>
             </a>
@@ -3808,15 +3813,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, R. Duverger, H. Sauer, C. Kulcsár, and F. Goudail, "Influence of high numerical aperture on depth-of-field enhancing phase mask optimization in localization microscopy," J. Opt. Soc. Am. A 38, 1380-1390 (2021)
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1364/JOSAA.432696" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1364/JOSAA.432696" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-closed-access"></i> <small>Closed access</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03331525" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03331525" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03331525/document" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03331525/document" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Free reading access</small>
             </a>
@@ -3826,15 +3831,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, C. Kulcsár, A. Lee, P. Bon, L. Cognet and F. Goudail, "On the validity domain of maximum likelihood estimators for depth-of-field extension in single-molecule localization microscopy," J. Opt. Soc. Am. A 39, 37-43 (2022) <kbd class="bg-orange">Editors' Pick</kbd>
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1364/JOSAA.439993" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1364/JOSAA.439993" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-closed-access"></i> <small>Closed access</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03473290" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03473290" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03473290/document" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03473290/document" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Free reading access</small>
             </a>
@@ -3844,15 +3849,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           Q. Gresil, A. Lee, <strong>O. Lévêque</strong>, K. Caicedo, B. Martín Muñoz, C. Kulcsár, F. Goudail, P. Bon and L. Cognet, "A Binary Annular Phase Mask to Regulate Spherical Aberration and Allow Super-Localization in Single-Particle Tracking over Extended Depth-of-Focus," Optics Communications (2023)
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1016/j.optcom.2023.129699" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1016/j.optcom.2023.129699" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-closed-access"></i> <small>Closed access</small>
             </a>
-            <a class="text-decoration-none" href="https://arxiv.org/abs/2304.12774v2" target="_blank">
+            <a class="text-decoration-none" href="https://arxiv.org/abs/2304.12774v2" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-arxiv"></i>
               <small>arXiv Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://arxiv.org/pdf/2304.12774v2.pdf" target="_blank">
+            <a class="text-decoration-none" href="https://arxiv.org/pdf/2304.12774v2.pdf" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Free reading access</small>
             </a>
@@ -3862,15 +3867,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, C. Kulcsár, L. Cognet and F. Goudail, "On the equivalence of binary phase masks optimized for localization or detection in extended depth-of-field localization microscopy," J. Opt. Soc. Am. A 40, 1753-1761 (2023) <kbd class="bg-orange">Editors' Pick</kbd>
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1364/JOSAA.492654" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1364/JOSAA.492654" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-closed-access"></i> <small>Closed access</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-04189164" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-04189164" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-04189164/document" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-04189164/document" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Free reading access</small>
             </a>
@@ -3884,15 +3889,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, C. Kulcsár, H. Sauer, A. Lee, P. Bon, L. Cognet, and F. Goudail, "Can phase masks extend depth-of-field in localization microscopy?," Proc. SPIE 11351, Unconventional Optical Imaging II, 113510E (13 October 2020)
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1117/12.2558426" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1117/12.2558426" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-closed-access"></i> <small>Closed access</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03025685" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03025685" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03025685/document" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03025685/document" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Free reading access</small>
             </a>
@@ -3902,15 +3907,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, C. Kulcsár, A. Lee, P. Bon, L. Cognet, and F. Goudail, "How to assess depth-of-field extension strategies applied to single-molecule super-resolution microscopes?," in <i>OSA Imaging and Applied Optics Congress 2021 (3D, COSI, DH, ISA, pcAOP)</i>, OSA Technical Digest (Optical Society of America, 2021), paper CF4B.5
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1364/COSI.2021.CF4B.5" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1364/COSI.2021.CF4B.5" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-closed-access"></i> <small>Closed access</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03417511" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03417511" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03417511/document" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03417511/document" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Free reading access</small>
             </a>
@@ -3920,11 +3925,11 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, C. Kulcsár, and F. Goudail, "Can better performance be obtained when an imaging system is co-optimized with a nonlinear deconvolution algorithm?," Proc. SPIE 11866, Electro-Optical and Infrared Systems: Technology and Applications XVIII and Electro-Optical Remote Sensing XV, 118660A (13 September 2021)
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="https://doi.org/10.1117/12.2597122" target="_blank">
+            <a class="text-decoration-none" href="https://doi.org/10.1117/12.2597122" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-closed-access"></i> <small>Closed access</small>
             </a>
-            <a class="text-decoration-none" href="https://hal.science/hal-03368729" target="_blank">
+            <a class="text-decoration-none" href="https://hal.science/hal-03368729" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
@@ -3938,15 +3943,15 @@ a.text-decoration-none:hover {
         <dd class="col-sm-11">
           <strong>O. Lévêque</strong>, "Co-conception de systèmes d'imagerie pour l'extension de profondeur de champ &mdash; Application à la localisation de molécule unique," PhD Thesis, Université Paris-Saclay (2022) <kbd class="bg-orange">Prix de thèse 2023 GS SIS</kbd>
           <div class="hstack gap-3">
-            <a class="text-decoration-none" href="http://www.theses.fr/2022UPAST009" target="_blank">
+            <a class="text-decoration-none" href="http://www.theses.fr/2022UPAST009" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-doi"></i>
               <i class="ai ai-open-access"></i> <small>Open access</small>
             </a>
-            <a class="text-decoration-none" href="https://pastel.hal.science/tel-03583892" target="_blank">
+            <a class="text-decoration-none" href="https://pastel.hal.science/tel-03583892" target="_blank" rel="noopener noreferrer">
               <i class="ai ai-hal"></i>
               <small>HAL Open Archives</small>
             </a>
-            <a class="text-decoration-none" href="https://pastel.hal.science/tel-03583892/document" target="_blank">
+            <a class="text-decoration-none" href="https://pastel.hal.science/tel-03583892/document" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-file-pdf"></i>
               <small>Reading access</small>
             </a>
