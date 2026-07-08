@@ -18,7 +18,11 @@ To run this project locally, follow these steps:
     ```
 4. Start the development server:
     ```bash
-    npm run test
+    npm run dev
+    ```
+5. Build for production into `dist/`:
+    ```bash
+    npm run build
     ```
 
 ## Credits

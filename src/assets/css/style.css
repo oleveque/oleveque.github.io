@@ -1,32 +1,38 @@
+:root {
+  --accent: #ED6A17;
+  --accent-hover: #c95b15;
+  --gray: #30363d;
+}
+
 ::selection {
-  background: #ED6A17;
+  background: var(--accent);
 }
 
 a.text-decoration-none {
-  color: #ED6A17!important;
+  color: var(--accent) !important;
 }
 
 a.text-decoration-none:hover {
-  color: #c95b15!important;
+  color: var(--accent-hover) !important;
 }
 
 .btn-orange {
   --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #ED6A17;
-  --bs-btn-color: #30363d;
+  --bs-btn-hover-bg: var(--accent);
+  --bs-btn-color: var(--gray);
   --bs-btn-bg: var(--bs-white);
 }
 
 .link-icon:hover {
-  color: #ED6A17!important;
+  color: var(--accent) !important;
 }
 
 .bg-gray {
-  background-color: #30363d;
+  background-color: var(--gray);
 }
 
 .bg-orange {
-  background-color: #ED6A17;
+  background-color: var(--accent);
 }
 
 .vh-25 {

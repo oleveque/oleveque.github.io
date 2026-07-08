@@ -3,9 +3,9 @@
   "version": "2.0.0",
   "description": "Personal website",
   "scripts": {
-    "vite": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "test": "vite --open"
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
